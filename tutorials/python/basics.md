@@ -54,7 +54,7 @@ Use `type()` command to check the data type of a variable. The list of data type
 <class 'str'>
 ```
 
-`'` and `"` used to create a string in the same line, while `""""` can be used for block comments consisting of multiple lines.
+`'` and `"` used to create a string in the same line, while `"""` can be used for block comments consisting of multiple lines.
 
 ```python
 # Block Commenting Example
