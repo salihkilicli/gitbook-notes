@@ -8,16 +8,16 @@ In this chapter code blocks used often. `>>>` symbol is used to denote the comma
 
 ### Print
 
-The first command everybody should learn is `print()`. It simply prints the provided string to the console.
+The first command everybody should learn is `print()`. It simply prints the provided string/variable to the console.
 
 {% hint style="info" %}
-**String:** Anything written between 2 apostrophe sign or quotation marks is called a string: Example: `'string1'`   `"string2"`
+**String:** Anything written between 2 apostrophe signs or quotation marks is called a string: Example: `'string1'`   `"string2"`
 {% endhint %}
 
 {% hint style="danger" %}
 Combining and apostrophe or quotation marks will give an error. 
 
-**Incorrect:** `'error1" "error2'`
+**Incorrect:** `'error1"  or  "error2'`
 {% endhint %}
 
 ```python
@@ -83,7 +83,7 @@ fitted in one line. """
 <class 'complex'>
 ```
 
-Note: `int(3.5)` gives the integer part of the float, i.e., $$3$$, whereas `float(3)` yields $$3.0$$. Complex `i` is denoted by `j` in Python since `i` often used to denote an **index** in loops.
+Note: `int(3.5)` gives the integer part of the float, i.e., $$3$$, whereas `float(3)` yields $$3.0$$. Complex `i` is denoted by `j` in Python since `i` often used to denote an **index** for iteration in a loop.
 
 * **Sequence Types:** List \(`list`\), Tuple \(`tuple`\), Range \(`range`\)
 
