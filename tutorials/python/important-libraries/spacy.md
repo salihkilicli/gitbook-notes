@@ -14,7 +14,6 @@ First, we need to specify the model we are using \(simply the language\). Here i
 
 ```python
 >>> import spacy
-
 >>> nlp = spacy.load('en')
 ```
 
