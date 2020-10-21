@@ -113,7 +113,7 @@ First, we will create a `Matcher`, or a `PhraseMatcher` object to match an indiv
 [(3766102292120407359, 2, 3), (3766102292120407359, 8, 9)]
 
 >>> match_id, start, end = matches[0]
->>> print(nlp.vocab.strings[match_id], text_list[start:end])
+>>> print(nlp.vocab.strings[match_id], word_list[start:end])
 
 TerminologyList ['Cat']
 ```
