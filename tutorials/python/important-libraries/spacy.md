@@ -268,7 +268,9 @@ As we trained a model, now we can make predictions using the `predict()` method.
  ['ham', 'spam']
 ```
 
-These scores are used to predict a single class by choosing the label with the **highest probability**. The index of the highest probability is obtained using `argmax` attribute on scores, then we can use that index to get the label from `textcat.labels`.  To measure the model performance, there are multiple metrics available such as `accuracy, precision, recall, F1-score, ROC curve, AUC, etc.` ****These topics are covered in the [Hands-on Machine Learning](../../../books/handsonml2/) section, [Chapter 3](../../../books/handsonml2/fundamentals-of-ml/classification.md).   
+These scores are used to predict a single class by choosing the label with the **highest probability**. The index of the highest probability is obtained using `argmax` attribute on scores, then we can use that index to get the label from `textcat.labels`.  To measure the model performance, there are multiple metrics available such as `accuracy, precision, recall, F1-score, ROC curve, AUC, etc.` ****These topics are covered in the [Hands-on Machine Learning](../../../books/handsonml2/) section, [Chapter 3](../../../books/handsonml2/fundamentals-of-ml/classification.md). 
+
+  
 ****
 
 
