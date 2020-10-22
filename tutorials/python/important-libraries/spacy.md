@@ -40,7 +40,7 @@ A token is a [string](https://wiki2.org/en/String_%28computer_science%29) with a
 * [literal](https://wiki2.org/en/Literal_%28computer_programming%29): numeric, logical, textual, reference literals;
 * [comment](https://wiki2.org/en/Comment_%28computer_programming%29): line, block.
 
-![Source: https://wiki2.org/en/Tokenization\_\(lexical\_analysis\)](../../../.gitbook/assets/screen-shot-2020-10-20-at-3.07.40-pm.png)
+![Source: https://wiki2.org/en/Tokenization\_\(lexical\_analysis\)](../../../.gitbook/assets/tokens.png)
 
 {% hint style="info" %}
 **Note:** Simply, a **token** is a unit of text in the document.
@@ -122,6 +122,46 @@ TerminologyList ['Cat']
 ```
 
 As it can be seen in the code snippet above, matcher returns a list of tuples where each tuple consists of `(match_id, start, end)` where start and end represent the beginning and ending of the string.
+
+### 4. Bag of Words
+
+Most of the Machine learning models require numerical data. Hence, you need to transform the text to numeric values somehow.
+
+One way to do is to use an idea similar to that of one-hot encoding. Each document can be represented as a vector of frequencies for each term in the vocabulary. The vocabulary is built from all the tokens \(terms\) in the corpus.
+
+Consider the sentence above "The quick brown fox jumps over the lazy dog."  and "The fox bit the dog." Then the vocabulary is \(excluding punctuation\):
+
+`{'the', 'quick' , 'brown', 'fox', 'jumps', 'over', 'lazy', 'dog', 'bit'}`
+
+Now for each document, we will count how many times a term occurs, and place that count in the appropriate element of a vector. Notice the vocabulary has 9 elements. Then, the sentences above can be represented as $$1 × 9$$ vectors, where each column represents the frequency of the terms included in the vocabulary.
+
+$$s_1 = [\quad  2, \quad 1,  \quad 1, \quad 1, \quad 1, \quad 1, \quad 1, \quad 1, \quad 0 \quad ] \\[10pt] s_2 = [\quad  2, \quad  0, \quad  0, \quad  1, \quad  0,  \quad 0, \quad  0, \quad  1, \quad  1 \quad ]$$ 
+
+  
+Notice that `0` s represents the missing terms in the sentences as sentence 1 doesn't have `bit` term. This representation is called a **bag of words**. Notice that vocabularies may have thousands of terms depending on the context, so sometimes these vectors are very large.
+
+Another common representation is **TF-IDF \(Term Frequency - Inverse Document Frequency\)**. Using TF-IDF can improve model performance.
+
+### **5. TF - IDF**
+
+**TFI - DF** is a numerical statistic that is intended to reflect how important a word is to a document in a collection or corpus. The TF-IDF value is proportional to the number of times a word appears in the document and is compensated by the number of documents in the corpus that contain the word, which helps to adjust for the fact that some words may appear more frequently. It is one of the most popular term-weighting schemes commonly used. According to Wikipedia, a survey conducted in 2015 showed that 83% of text-based recommender systems in digital libraries use TF-IDF. The formula of TF-IDF includes two different metrics:
+
+                                            $$\text{TFI-DF} (t,d,D)= \text{TF} (t,d) × \text{IDF} (t,D) $$ 
+
+The **term frequency** \(TF\) of a word in a specific document. Some of the variants of the TF weight are:
+
+![Source: https://en.wikipedia.org/wiki/Tf-idf](../../../.gitbook/assets/tf.png)
+
+* The **inverse document frequency** \(IDF\) of the word across a set of documents, which calculates how common \(or rare\) a term is in the entire set of documents. As IDF gets close to 0, it means that the term is more common across the documents.
+
+Some of the variants of the IDF weight are:
+
+![Source: https://en.wikipedia.org/wiki/Tf-idf](../../../.gitbook/assets/idf.png)
+
+    
+****
+
+
 
 
 
