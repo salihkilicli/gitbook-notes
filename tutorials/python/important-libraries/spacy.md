@@ -140,22 +140,6 @@ Now for each document, we will count how many times a term occurs, and place tha
   
 Notice that `0` 's represent the missing terms in the sentences. For example,  sentence 1 doesn't include the `bit` term. This representation is called a **bag of words**. Vocabularies may have thousands of terms depending on the context, so sometimes these vectors can be very large.
 
-Another common representation is **TF-IDF \(Term Frequency - Inverse Document Frequency\)**. Using TF-IDF can improve model performance.
-
-### **5. TF - IDF**
-
-**TFI - DF** is a numerical statistic that is intended to reflect how important a word is to a document in a collection or corpus. The TF-IDF value is proportional to the number of times a word appears in the document and is compensated by the number of documents in the corpus that contain the word, which helps to adjust for the fact that some words may appear more frequently. It is one of the most popular term-weighting schemes commonly used. According to Wikipedia, a survey conducted in 2015 showed that 83% of text-based recommender systems in digital libraries use TF-IDF. The formula of TF-IDF includes two different metrics:
-
-                                            $$\text{TFI-DF} (t,d,D)= \text{TF} (t,d) × \text{IDF} (t,D) $$ 
-
-* The **term frequency** \(TF\) of a word in a specific document. It simply gives a frequency of the term appearing in the document. The simplest approach is a binary weight including `0` and `1`depending on whether the term appears or not in the document. Some of its variants are:
-
-![Source: https://en.wikipedia.org/wiki/Tf-idf](../../../.gitbook/assets/tf.png)
-
-* The **inverse document frequency** \(IDF\) of the word across a set of documents, which calculates how common \(or rare\) a term is in the entire set of documents. As IDF gets close to 0, it means that the term is more common across the documents. Some of its variants are:
-
-![Source: https://en.wikipedia.org/wiki/Tf-idf](../../../.gitbook/assets/idf.png)
-
 Once you have the bag of words representation of your document, you can feed those vectors to any machine learning model. SpaCy's `TextCategorizer` class handles this conversion and builds a simple linear model for you.
 
 The TextCategorizer is a **pipe,** where pipes are classes for processing and transforming tokens. When you create a spaCy model with `nlp = spacy.load('en')`, there are default pipes performing different transformations. When you run the text through a model `doc = nlp("Example text")`, the output of the pipes is attached to the tokens in the `doc` object. The lemmas for `token.lemma_` come from one of these pipes. First, we will create a model without any pipes except for a tokenizer. Then, we'll create a TextCategorizer pipe and add it to the empty model.
@@ -179,7 +163,33 @@ The TextCategorizer is a **pipe,** where pipes are classes for processing and tr
 
 In the problem above, we are modeling a binary classification problem in which classes are `spam` and `ham`; hence, the classes are **exclusive**. Finally, **bow** stands for the `bag of words` architecture**.** Here we picked a simple architecture.
 
-### 6. Training a TextCategorizer Model
+Other common representations are **TF-IDF \(Term Frequency - Inverse Document Frequency\),** and **Word Embeddings \(or Vectors\)**. Using those can improve model performance.
+
+### **5. TF - IDF**
+
+**TFI - DF** is a numerical statistic that is intended to reflect how important a word is to a document in a collection or corpus. The TF-IDF value is proportional to the number of times a word appears in the document and is compensated by the number of documents in the corpus that contain the word, which helps to adjust for the fact that some words may appear more frequently. It is one of the most popular term-weighting schemes commonly used. According to Wikipedia, a survey conducted in 2015 showed that 83% of text-based recommender systems in digital libraries use TF-IDF. The formula of TF-IDF includes two different metrics:
+
+                                            $$\text{TFI-DF} (t,d,D)= \text{TF} (t,d) × \text{IDF} (t,D) $$ 
+
+* The **term frequency** \(TF\) of a word in a specific document. It simply gives a frequency of the term appearing in the document. The simplest approach is a binary weight including `0` and `1`depending on whether the term appears or not in the document. Some of its variants are:
+
+![Source: https://en.wikipedia.org/wiki/Tf-idf](../../../.gitbook/assets/tf.png)
+
+* The **inverse document frequency** \(IDF\) of the word across a set of documents, which calculates how common \(or rare\) a term is in the entire set of documents. As IDF gets close to 0, it means that the term is more common across the documents. Some of its variants are:
+
+![Source: https://en.wikipedia.org/wiki/Tf-idf](../../../.gitbook/assets/idf.png)
+
+### 6. Word Embeddings \(Vectors\)
+
+**Word embeddings** are numerical representations of the words in documents such that the vector corresponds to how the word is used or what it possibly means. Vector encodings are learned by taking the context into consideration. Words showing up in similar contexts will have similar vectors. For example, vectors for "cat", "lion", and "tiger" will be close together, while they'll be far away from "space" and "house".
+
+Moreover, the relations between words can be expressed mathematically using similarity measures such as cosine similarity. As a result, operations available in vectors will work in vector embeddings as well. For example, subtracting the vectors corresponding to "man" and "woman" will return another vector. Adding the final vector to the vector corresponding to "king" will result in a vector close to the one for "queen."
+
+
+
+
+
+### 7. Training a TextCategorizer Model
 
 We need to convert the data labels into the form TextCategorizer requires. For example, if a text \(in an email\) is `spam` then we will create a dictionary `{'spam': True,  'ham': False}`.
 
@@ -243,7 +253,7 @@ Notice that this is training just one loop \(epoch\) through the whole data. To 
 {'textcat': 1.0378531328161298}
 ```
 
-### 7. Making Predictions
+### 8. Making Predictions
 
 As we trained a model, now we can make predictions using the `predict()` method. We need to be careful as the input needs to be tokenized using `nlp.tokenizer` before feeding to predictions.
 
