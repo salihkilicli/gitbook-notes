@@ -8,7 +8,7 @@ description: >-
 
 ## NLP using SpaCy
 
-This is a brief summary of the NLP [course](https://www.kaggle.com/learn/natural-language-processing) given by [Kaggle](https://www.kaggle.com/). [SpaCy](https://spacy.io/) is the leading library for [NLP](https://wiki2.org/en/Natural_language_processing+Brights.4),  and one of the most popular Python frameworks. Here I will mention some of the important methods used for Natural Language Processing using SpaCy.
+This is mainly a brief summary of the NLP [course](https://www.kaggle.com/learn/natural-language-processing) given by [Kaggle](https://www.kaggle.com/). But I included some other information that can be useful. [SpaCy](https://spacy.io/) is the leading library for [NLP](https://wiki2.org/en/Natural_language_processing+Brights.4),  and one of the most popular Python frameworks. Here I will mention some of the important methods used for Natural Language Processing using SpaCy.
 
 First, we need to specify the model we are using \(simply the language\). Here is a small snippet of loading the "English" language model.
 
@@ -48,7 +48,7 @@ A token is a [string](https://wiki2.org/en/String_%28computer_science%29) with a
 
 ```python
 >>> for (i, token) in enumerate(text):
->>>    print(f"Token {i}: {token}")
+...    print(f"Token {i}: {token}")
 
 Token 0: The
 Token 1: quick
@@ -77,7 +77,7 @@ After creating a token,  we can use the attributes `lemma_` and `is_stop` , that
 >>> print("Token \t\t Lemma \t\t Stopword?")
 >>> print("-"*42)
 >>> for token in text:
->>>    print(f"{str(token)} \t\t {token.lemma_} \t\t {token.is_stop}")
+...    print(f"{str(token)} \t\t {token.lemma_} \t\t {token.is_stop}")
 
 Token 	    	   Lemma 		       Stopword?
 ------------------------------------------
@@ -135,10 +135,10 @@ Consider the sentence above "The quick brown fox jumps over the lazy dog."  and 
 
 Now for each document, we will count how many times a term occurs, and place that count in the appropriate element of a vector. Notice the vocabulary has 9 elements. Then, the sentences above can be represented as $$1 × 9$$ vectors, where each column represents the frequency of the terms included in the vocabulary.
 
-$$s_1 = [\quad  2, \quad 1,  \quad 1, \quad 1, \quad 1, \quad 1, \quad 1, \quad 1, \quad 0 \quad ] \\[10pt] s_2 = [\quad  2, \quad  0, \quad  0, \quad  1, \quad  0,  \quad 0, \quad  0, \quad  1, \quad  1 \quad ]$$ 
+                                             $$s_1 = [\quad  2, \quad 1,  \quad 1, \quad 1, \quad 1, \quad 1, \quad 1, \quad 1, \quad 0 \quad ] \\[10pt] s_2 = [\quad  2, \quad  0, \quad  0, \quad  1, \quad  0,  \quad 0, \quad  0, \quad  1, \quad  1 \quad ]$$ 
 
   
-Notice that `0` s represents the missing terms in the sentences as sentence 1 doesn't have `bit` term. This representation is called a **bag of words**. Notice that vocabularies may have thousands of terms depending on the context, so sometimes these vectors are very large.
+Notice that `0` 's represent the missing terms in the sentences. For example,  sentence 1 doesn't include the `bit` term. This representation is called a **bag of words**. Vocabularies may have thousands of terms depending on the context, so sometimes these vectors can be very large.
 
 Another common representation is **TF-IDF \(Term Frequency - Inverse Document Frequency\)**. Using TF-IDF can improve model performance.
 
@@ -155,6 +155,12 @@ Another common representation is **TF-IDF \(Term Frequency - Inverse Document Fr
 * The **inverse document frequency** \(IDF\) of the word across a set of documents, which calculates how common \(or rare\) a term is in the entire set of documents. As IDF gets close to 0, it means that the term is more common across the documents. Some of its variants are:
 
 ![Source: https://en.wikipedia.org/wiki/Tf-idf](../../../.gitbook/assets/idf.png)
+
+Once you have the bag of words representation of your document, you can feed those vectors to any machine learning model. SpaCy handles this conversion and building a simple linear model for you using the `TextCategorizer` class.
+
+The TextCategorizer is a spaCy **pipe,** where a pipe is a class for processing and transforming tokens. When you create a spaCy model with `nlp = spacy.load('en')`, there are default pipes that perform part of speech tagging, entity recognition, and other transformations. When you run the text through a model `doc = nlp("Example text")`, the output of the pipes is attached to the tokens in the `doc` object. The lemmas for `token.lemma_` come from one of these pipes.
+
+We will create a model without any pipes except for a tokenizer. Then, we'll create a TextCategorizer pipe and add it to the empty model.
 
 
 
