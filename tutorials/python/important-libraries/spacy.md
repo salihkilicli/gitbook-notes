@@ -148,7 +148,7 @@ Another common representation is **TF-IDF \(Term Frequency - Inverse Document Fr
 
                                             $$\text{TFI-DF} (t,d,D)= \text{TF} (t,d) × \text{IDF} (t,D) $$ 
 
-* The **term frequency** \(TF\) of a word in a specific document. Some of its variants are:
+* The **term frequency** \(TF\) of a word in a specific document. It simply gives a frequency of the term appearing in the document. The simplest approach is a binary weight including `0` and `1`depending on whether the term appears or not in the document. Some of its variants are:
 
 ![Source: https://en.wikipedia.org/wiki/Tf-idf](../../../.gitbook/assets/tf.png)
 
