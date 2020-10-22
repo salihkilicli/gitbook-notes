@@ -156,15 +156,119 @@ Another common representation is **TF-IDF \(Term Frequency - Inverse Document Fr
 
 ![Source: https://en.wikipedia.org/wiki/Tf-idf](../../../.gitbook/assets/idf.png)
 
-Once you have the bag of words representation of your document, you can feed those vectors to any machine learning model. SpaCy handles this conversion and building a simple linear model for you using the `TextCategorizer` class.
+Once you have the bag of words representation of your document, you can feed those vectors to any machine learning model. SpaCy's `TextCategorizer` class handles this conversion and builds a simple linear model for you.
 
-The TextCategorizer is a spaCy **pipe,** where a pipe is a class for processing and transforming tokens. When you create a spaCy model with `nlp = spacy.load('en')`, there are default pipes that perform part of speech tagging, entity recognition, and other transformations. When you run the text through a model `doc = nlp("Example text")`, the output of the pipes is attached to the tokens in the `doc` object. The lemmas for `token.lemma_` come from one of these pipes.
+The TextCategorizer is a **pipe,** where pipes are classes for processing and transforming tokens. When you create a spaCy model with `nlp = spacy.load('en')`, there are default pipes performing different transformations. When you run the text through a model `doc = nlp("Example text")`, the output of the pipes is attached to the tokens in the `doc` object. The lemmas for `token.lemma_` come from one of these pipes. First, we will create a model without any pipes except for a tokenizer. Then, we'll create a TextCategorizer pipe and add it to the empty model.
 
-We will create a model without any pipes except for a tokenizer. Then, we'll create a TextCategorizer pipe and add it to the empty model.
+```python
+# We already imported spacy above
+# Let's create an empty model
+>>> nlp = spacy.blank('en')
 
+# Let's create the TextCategorizer w/ exclusive classes and 'bow' architecture
+>>> config0 = {'exclusive_classes': True, 'architecture': 'bow'}
+>>> textcat = nlp.create_pipe('textcat', config = config0)
 
+# Let's add the TextCategorizer to the model
+>>> nlp.add_pipe(textcat)
 
-    
+# Add labels to text classifier
+>>> textcat.add_label('spam')
+>>> textcat.add_label('ham')
+```
+
+In the problem above, we are modeling a binary classification problem in which classes are `spam` and `ham`; hence, the classes are **exclusive**. Finally, **bow** stands for the `bag of words` architecture**.** Here we picked a simple architecture.
+
+### 6. Training a TextCategorizer Model
+
+We need to convert the data labels into the form TextCategorizer requires. For example, if a text \(in an email\) is `spam` then we will create a dictionary `{'spam': True,  'ham': False}`.
+
+```python
+>>> texts = spam['text'].values
+>>> labels= [{'cats': {'ham': label == 'ham', 'spam': label == 'spam'}}
+               for label in spam['label']
+               ]
+
+# Let's combine the texts with labels using zip function             
+>>> X_train = list(zip(texts, labels))
+```
+
+We are now ready to train our first model. First, we will create an `optimizer` object, then we will split our data into mini-batches to increase the efficiency of the model. Finally, using the`update` attribute of the model we will update the parameters.
+
+```python
+>>>> from spacy.util import minibatch
+
+# Fix random initialize and instantiate the optimizer object
+>>> spacy.util.fix_random_seed(42)
+>>> opt = nlp.begin_training()
+
+# Let's create a batch generator with given batch size
+>>> batches = minibatch(X_train, size = 10)
+
+# Let's iterate through batches and update parameters
+>>> for batch in batches:
+...    (texts, labels) = zip(*batch)
+...    nlp.update(texts, labels, sgd = opt)
+```
+
+Notice that this is training just one loop \(epoch\) through the whole data. To get better results, we need to randomly shuffle the data and then go through it multiple times using `epoch`.
+
+```python
+>>> import random
+
+>>> random.seed(42)                               # Fix initialization of random
+>>> spacy.util.fix_random_seed(42)                # Fix initialization of spacy
+>>> opt = nlp.begin_training()
+
+>>> train_loss = {}
+
+# Let's iterate through batches  for each epoch
+>>>for epoch in range(10):
+...    random.shuffle(X_train)                    # shuffle the data
+...    batches = minibatch(X_train, size = 10)    # create mini-batches of data 
+...        for batch in batches:                  # update variables at each batch
+...            (texts, labels) = zip(*batch)
+...            nlp.update(texts, labels, sgd = opt, losses = train_loss)
+...    print(losses)
+
+{'textcat': 0.4318974167265992}
+{'textcat': 0.6474976181863781}
+{'textcat': 0.7842154461214998}
+{'textcat': 0.8716683624472470}
+{'textcat': 0.9280939224368301}
+{'textcat': 0.9655779806546522}
+{'textcat': 0.9939651735123619}
+{'textcat': 1.0127976521031560}
+{'textcat': 1.0275637693323000}
+{'textcat': 1.0378531328161298}
+```
+
+### 7. Making Predictions
+
+As we trained a model, now we can make predictions using the `predict()` method. We need to be careful as the input needs to be tokenized using `nlp.tokenizer` before feeding to predictions.
+
+```python
+>>> texts = ["Are you ready for the tea party????? It's gonna be wild",
+             "URGENT Reply to this message for GUARANTEED FREE TEA" ]
+         
+>>> docs = [nlp.tokenizer(word) for word in texts]
+
+# Let's calculate the scores for each doc
+>>> textcat = nlp.get_pipe('textcat')
+>>> scores  = textcat.predict(docs)[0]
+
+>>> print(scores)
+
+[[9.9994397e-01 5.6023764e-05]
+ [1.1491313e-02 9.8850864e-01]]
+ 
+ >>> preds = scores.argmax(axis = 1)
+ >>> print([textcat.labels[label] for label in preds]
+ 
+ ['ham', 'spam']
+```
+
+These scores are used to predict a single class by choosing the label with the **highest probability**. The index of the highest probability is obtained using `argmax` attribute on scores, then we can use that index to get the label from `textcat.labels`.  To measure the model performance, there are multiple metrics available such as `accuracy, precision, recall, F1-score, ROC curve, AUC, etc.` ****These topics are covered in the Hands-on Machine Learning section, Chapter 3.   
 ****
 
 
