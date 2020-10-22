@@ -148,15 +148,15 @@ Another common representation is **TF-IDF \(Term Frequency - Inverse Document Fr
 
                                             $$\text{TFI-DF} (t,d,D)= \text{TF} (t,d) × \text{IDF} (t,D) $$ 
 
-The **term frequency** \(TF\) of a word in a specific document. Some of the variants of the TF weight are:
+* The **term frequency** \(TF\) of a word in a specific document. Some of its variants are:
 
 ![Source: https://en.wikipedia.org/wiki/Tf-idf](../../../.gitbook/assets/tf.png)
 
-* The **inverse document frequency** \(IDF\) of the word across a set of documents, which calculates how common \(or rare\) a term is in the entire set of documents. As IDF gets close to 0, it means that the term is more common across the documents.
-
-Some of the variants of the IDF weight are:
+* The **inverse document frequency** \(IDF\) of the word across a set of documents, which calculates how common \(or rare\) a term is in the entire set of documents. As IDF gets close to 0, it means that the term is more common across the documents. Some of its variants are:
 
 ![Source: https://en.wikipedia.org/wiki/Tf-idf](../../../.gitbook/assets/idf.png)
+
+
 
     
 ****
