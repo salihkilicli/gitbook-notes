@@ -8,6 +8,7 @@ description: >-
 
 Currently, I am working on:
 
+* [x] [NLP using Spacy](tutorials/python/important-libraries/spacy.md#nlp-using-spacy) library under Python/Important Libraries
 * [ ] Python Basics
 * [ ] the Hands-on ML2 section under the Book Notes page
 
