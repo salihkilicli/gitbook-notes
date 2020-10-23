@@ -185,9 +185,15 @@ Other common representations are **TF-IDF \(Term Frequency - Inverse Document Fr
 
 Moreover, the relations between words can be expressed mathematically using similarity measures such as cosine similarity. As a result, operations available in vectors will work in vector embeddings as well. For example, subtracting the vectors corresponding to "man" and "woman" will return another vector. Adding the final vector to the vector corresponding to "king" will result in a vector close to the one for "queen."
 
+![Source: https://www.kaggle.com/matleonard/word-vectors](../../../.gitbook/assets/word_vectors.png)
 
+SpaCy provides embeddings learned from the `Word2Vec` model. These embeddings can be accessed by loading language models like `en_core_web_lg`. After loading the model, the embeddings will be available on tokens using `.vector` attribute.
 
+**Cosine similarity** measures the angle between two vectors ****$$x$$ ****and ****$$y.$$ It is often used as a similarity metric in various machine learning models.
 
+                                                                         ****$$cos \ \theta = \dfrac{\bold{x} \cdot \bold{y}}{\| \bold{x} \| \| \bold{y} \|} $$ 
+
+where $$\bold{x} \cdot \bold{y}$$ denotes the dot product of the vectors $$x$$ and $$y$$ , and $$\| \cdot \|$$ denotes the magnitude of a vector.
 
 ### 7. Training a TextCategorizer Model
 
