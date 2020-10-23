@@ -4,21 +4,34 @@ description: Here is some basic information about the Python programming languag
 
 # Basics
 
-In this chapter code blocks used often. `>>>` symbol is used to denote the commands entered to the interpreter. The following line is the output of the Python interpreter.
+In this chapter code blocks used often. `>>>` symbol is used to denote the commands entered into the interpreter. `...` denotes an indented code block following a for/while loop or a conditional statement. The rest of the lines are the outputs of the Python interpreter.
 
 ### Print
 
 The first command everybody should learn is `print()`. It simply prints the provided string/variable to the console.
 
 {% hint style="info" %}
-**String:** Anything written between 2 apostrophe signs or quotation marks is called a string: Example: `'string1'`   `"string2"`
+**String:** Anything written between 2 apostrophe signs or quotation marks is called a string: 
+
+**Example:** `'Hello!'`   `"I love programming!"`  
 {% endhint %}
 
 {% hint style="danger" %}
-Combining and apostrophe or quotation marks will give an error. 
+**Warning**: Combining and apostrophe or quotation marks will give an error. 
 
 **Incorrect:** `'error1"  or  "error2'`
 {% endhint %}
+
+{% hint style="warning" %}
+**`Note:`**`'` and `"` used to create a string in the same line, while `"""` can be used for block comments consisting of multiple lines.
+{% endhint %}
+
+```python
+# Block Commenting Example
+""" This is generally use to explain how some code block and/or a 
+function works, especially when the explanation of the code cannot be
+fitted in one line. """
+```
 
 ```python
 >>> print('Hello World! This is Salih!')
@@ -26,6 +39,9 @@ Hello World! This is Salih.
 
 >>> print("I am an Applied Mathematician!")
 I am an Applied Mathematician!
+
+>>> print("This is an erratic string')
+Error
 ```
 
 ### Variables
@@ -37,6 +53,7 @@ To create a variable use  `=`   sign followed by a variable name and then assign
 >>> b = 'This is a string.'
 >>> print(a)
 5
+
 >>> print(b)
 This is a string.
 ```
@@ -52,16 +69,6 @@ Use `type()` command to check the data type of a variable. The list of data type
 >>> s = 'This is a string'
 >>> print(type(s))
 <class 'str'>
-```
-
-`'` and `"` used to create a string in the same line, while `"""` can be used for block comments consisting of multiple lines.
-
-```python
-# Block Commenting Example
-""" This is generally use to explain how some code block and/or a 
-function works, especially when the explanation of the code cannot be
-fitted in one line. """
-
 ```
 
 * **Numeric Types:** Integer \(`int`\), Float \(`float`\), Complex \(`complex`\)
