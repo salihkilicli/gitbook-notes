@@ -8,9 +8,9 @@ description: >-
 
 Currently, I am working on:
 
-* [ ] Python Basics
-* [ ] the Hands-on ML2 section under the Book Notes page
-* [x] [NLP using Spacy](tutorials/python/important-libraries/spacy.md#nlp-using-spacy) library subsection  Python/Important Libraries section
+* [ ] Python [Basics](tutorials/python/basics.md) under Tutorials/ Python
+* [ ] The [Hands-on ML2](books/handsonml2/) book summary under Book Notes
+* [x] [NLP using Spacy](tutorials/python/important-libraries/spacy.md#nlp-using-spacy) library subsection under Tutorials/Python/Important Libraries
 
 
 
