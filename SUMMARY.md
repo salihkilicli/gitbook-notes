@@ -47,6 +47,7 @@
   * [1. Fundamentals of DL](books/dlwp/1.-fundamentals-of-dl.md)
   * [2. Deep Learning in Practice](books/dlwp/2.-deep-learning-in-practice.md)
 * [Elements of Statistical Learning](books/esl.md)
+* [Math for Machine Learning](books/math-for-machine-learning.md)
 
 ## Advanced Topics <a id="advanced"></a>
 
