@@ -11,7 +11,7 @@ description: >-
 
 This is mainly a brief summary of the NLP [course](https://www.kaggle.com/learn/natural-language-processing) given by [Kaggle](https://www.kaggle.com/). But I included some other information that can be useful. [SpaCy](https://spacy.io/) is the leading library for [NLP](https://wiki2.org/en/Natural_language_processing+Brights.4),  and one of the most popular Python frameworks. Here I will mention some of the important methods used for Natural Language Processing using SpaCy.
 
-First, we need to specify the model we are using \(simply the language\). Here is a small snippet of loading the "English" language model.
+First, we need to specify the model we are using \(simply the **language**\). Here is a small snippet of loading the **"English"** language model.
 
 ```python
 >>> import spacy
