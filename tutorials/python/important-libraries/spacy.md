@@ -1,7 +1,8 @@
 ---
 description: >-
   Some of the concepts, methods, and objects used in the SpaCy library (for
-  Natural Language Processing) will be covered here.
+  Natural Language Processing) will be covered here. There will be another set
+  of NLP notes under the Deep Learning section.
 ---
 
 # SpaCy
@@ -142,7 +143,7 @@ Notice that `0` 's represent the missing terms in the sentences. For example,  s
 
 Once you have the bag of words representation of your document, you can feed those vectors to any machine learning model. SpaCy's `TextCategorizer` class handles this conversion and builds a simple linear model for you.
 
-The TextCategorizer is a **pipe,** where pipes are classes for processing and transforming tokens. When you create a spaCy model with `nlp = spacy.load('en')`, there are default pipes performing different transformations. When you run the text through a model `doc = nlp("Example text")`, the output of the pipes is attached to the tokens in the `doc` object. The lemmas for `token.lemma_` come from one of these pipes. First, we will create a model without any pipes except for a tokenizer. Then, we'll create a TextCategorizer pipe and add it to the empty model.
+The `TextCategorizer` is a **pipe,** where pipes are classes for processing and transforming tokens. When you create a spaCy model with `nlp = spacy.load('en')`, there are default pipes performing different transformations. When you run the text through a model `doc = nlp("Example text")`, the output of the pipes is attached to the tokens in the `doc` object. The lemmas for `token.lemma_` come from one of these pipes. First, we will create a model without any pipes except for a tokenizer. Then, we'll create a TextCategorizer pipe and add it to the empty model.
 
 ```python
 # We already imported spacy above
@@ -191,9 +192,9 @@ SpaCy provides embeddings learned from the `Word2Vec` model. These embeddings ca
 
 **Cosine similarity** measures the angle between two vectors ****$$x$$ ****and ****$$y.$$ It is often used as a similarity metric in various machine learning models.
 
-                                                                         ****$$cos \ \theta = \dfrac{\bold{x} \cdot \bold{y}}{\| \bold{x} \| \| \bold{y} \|} $$ 
+                                                     ****$$cos \ \theta = \dfrac{\bold{x} \cdot \bold{y}}{\| \bold{x} \| \| \bold{y} \|}  = \dfrac{\sum\limits_{i=1}^{n} x_i y_i}{\sqrt{\sum\limits_{i=1}^{n} x_i^2}\sqrt{\sum\limits_{i=1}^{n} y_i^2}}$$ 
 
-where $$\bold{x} \cdot \bold{y}$$ denotes the dot product of the vectors $$x$$ and $$y$$ , and $$\| \cdot \|$$ denotes the magnitude of a vector.
+where $$\bold{x} \cdot \bold{y}$$ denotes the dot product of the vectors $$x = (x_1, ., x_n)$$ and $$y = (y_1, ., y_n)$$, and $$\| x \|$$ denotes the magnitude \(Euclidean norm\) of the vector $$x$$.
 
 ### 7. Training a TextCategorizer Model
 
