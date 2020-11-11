@@ -1,8 +1,8 @@
 ---
 description: >-
-  Some of the concepts, methods, and objects used in the SpaCy library (for
-  Natural Language Processing) will be covered here. There will be another set
-  of NLP notes under the Deep Learning section.
+  Some of the concepts, methods, and objects used in the SpaCy library (for NLP)
+  will be covered here. There will be another set of NLP notes under the Deep
+  Learning section.
 ---
 
 # SpaCy
@@ -63,7 +63,7 @@ Token 8: dog
 Token 9: .
 
 # One can also create a list of tokens using list comprehension
-tokens = [token for token in text]
+>>> tokens = [token for token in text]
 ```
 
 ### 2. Text Processing
