@@ -1,8 +1,8 @@
 ---
 description: >-
-  Some of the concepts, methods, and objects used in the SpaCy library (for
-  Natural Language Processing) will be covered here. There will be another set
-  of NLP notes under the Deep Learning section.
+  Some of the concepts, methods, and objects used in the SpaCy library (for NLP)
+  will be covered here. There will be another set of NLP notes under the Deep
+  Learning section.
 ---
 
 # SpaCy
