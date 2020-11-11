@@ -63,7 +63,7 @@ Token 8: dog
 Token 9: .
 
 # One can also create a list of tokens using list comprehension
-tokens = [token for token in text]
+>>> tokens = [token for token in text]
 ```
 
 ### 2. Text Processing
