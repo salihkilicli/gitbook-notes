@@ -24,9 +24,13 @@ My personal favorites are Jupyter Notebook \(or JupyterLab\) and VSCode for Pyth
 The first command everybody should learn is `print()`. It simply prints the provided string/variable to the console.
 
 {% hint style="info" %}
-**String:** Anything written between 2 apostrophe signs or quotation marks is called a string: 
+**String:** Anything written between 2 apostrophe signs or quotation marks is called a string, and if one of the words requires an apostrophe we can use quotation marks to represent the string \(see the last example below\).
 
-**Example:** `'Hello!'`   `"I love programming!"`  
+**Examples:** `'Hello!'` 
+
+         `"I love programming!"`
+
+         `"We are going to eat breakfast at Denny's."`
 {% endhint %}
 
 {% hint style="danger" %}
@@ -127,7 +131,7 @@ Note: `int(3.5)` gives the integer part of the float, i.e., $$3$$, whereas `floa
 Lists and tuples can store different types of data types. However, the main difference between a `list` and a `tuple` is that the lists are **mutable** \(i.e., the elements can be reassigned\) while the latter is **immutable** \(i.e., the elements cannot be reassigned or changed\). The `range` function is mainly used to create integer sequences in the following format `range(start=0, stop, step).` Some examples are given below:
 
 ```python
->>> list(range(5))        # since range is an generator (will see later)
+>>> list(range(5))        # since range is a generator (will see later)
 [0, 1, 2, 3, 4]           # list() gives the range in a list format
               
 >>> list(range(0, 10, 2)) # Notice range doesn't include stop point
