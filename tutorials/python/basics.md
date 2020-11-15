@@ -4,7 +4,7 @@ description: Here is some basic information about the Python programming languag
 
 # Basics
 
-In this chapter code blocks used often. `>>>` symbol is used to denote the commands entered into the interpreter. `...` denotes an indented code block following a `for`  or `while` loop \(will mention later\) or a conditional statement. The rest of the lines are the outputs of the Python interpreter.
+In this chapter code blocks used often. `>>>` symbol is used to denote the commands entered into the interpreter. `...` denotes an indented code block following a `for`  or `while` loop \(will mention later\) or a conditional statement. The rest of the lines represent outputs of the Python interpreter.
 
 ### Installing Python
 
