@@ -6,6 +6,19 @@ description: Here is some basic information about the Python programming languag
 
 In this chapter code blocks used often. `>>>` symbol is used to denote the commands entered into the interpreter. `...` denotes an indented code block following a for/while loop or a conditional statement. The rest of the lines are the outputs of the Python interpreter.
 
+### Installing Python
+
+Most of the computers already come with **Python** installed. In order to check whether you already have up to date version of Python, go to the command line \(terminal in Mac, cmd in Windows\) and type Python, the prompt will show the version of Python you have.
+
+```python
+>>> username$ python
+Python 3.7.7 (default, Mar 26 2020, 10:32:53) 
+```
+
+If you don't have up to date version of Python, you can go install the one compatible with your device [here](https://www.python.org/downloads/). Moreover, if you are going to learn Python and use it for Data Science, probably the best option is to download [Anaconda](https://www.anaconda.com/products/individual) \(or light version [Miniconda](https://docs.conda.io/en/latest/miniconda.html)\) distribution as it comes with most of the up to date Machine Learning libraries included along with the most common Python and R interpreters \(JupyterLab, Jupyter Notebook, PyCharm, RStudio, Spider, VSCode, etc.\).
+
+My personal favorites are Jupyter Notebook \(or JupyterLab\) and VSCode for Python, RStudio for R. Now, assuming you already have an interpreter let's dive into the basics of Python.
+
 ### Print
 
 The first command everybody should learn is `print()`. It simply prints the provided string/variable to the console.
