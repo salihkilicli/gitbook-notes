@@ -24,8 +24,10 @@ My personal favorites are Jupyter Notebook \(or JupyterLab\) and VSCode for Pyth
 The first command everybody should learn is `print()`. It simply prints the provided string/variable to the console.
 
 {% hint style="info" %}
-**String:** Anything written between 2 apostrophe signs or quotation marks is called a string, and if one of the words requires an apostrophe we can use quotation marks to represent the string \(see the last example below\).
+**String:** Anything written between 2 apostrophes `(' ')`or quotation marks `(" ") is` called a string, and if one of the words requires an apostrophe we can use quotation marks to represent the string \(see the last example below\).
+{% endhint %}
 
+{% hint style="success" %}
 **Examples:** `'Hello!'` 
 
          `"I love programming!"`
