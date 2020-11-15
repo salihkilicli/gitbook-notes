@@ -44,7 +44,7 @@ The first command everybody should learn is `print()`. It simply prints the prov
 {% endhint %}
 
 ```python
-# Block Commenting Example
+# Block Commenting Example - often used in function descriptions
 """ This is generally use to explain how some code block and/or a 
 function works, especially when the explanation of the code cannot be
 fitted in one line. """
