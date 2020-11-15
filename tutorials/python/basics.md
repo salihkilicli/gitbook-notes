@@ -17,7 +17,7 @@ Python 3.7.7 (default, Mar 26 2020, 10:32:53)
 
 If you don't have up to date version of Python, you can go install the one compatible with your device [here](https://www.python.org/downloads/). Moreover, if you are going to learn Python and use it for Data Science, probably the best option is to download [Anaconda](https://www.anaconda.com/products/individual) \(or light version [Miniconda](https://docs.conda.io/en/latest/miniconda.html)\) distribution as it comes with most of the up to date Machine Learning libraries included along with the most common Python and R interpreters \(JupyterLab, Jupyter Notebook, PyCharm, RStudio, Spider, VSCode, etc.\).
 
-My personal favorites are Jupyter Notebook \(or JupyterLab\) and VSCode for Python, RStudio for R. Now, assuming you already have an interpreter let's dive into the basics of Python.
+My personal favorites are Jupyter Notebook \(or JupyterLab\) and VSCode for Python, RStudio for R. Now, assuming you already have an interpreter let's dive into the basic commands of Python.
 
 ### Print
 
