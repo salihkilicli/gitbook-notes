@@ -34,7 +34,7 @@ The first command everybody should learn is `print()`. It simply prints the prov
 {% endhint %}
 
 {% hint style="danger" %}
-**Warning**: Combining and apostrophe or quotation marks will give an error. 
+**Warning**: Combining and apostrophe or quotation marks will give an error.
 
 **Incorrect:** `'error1"  or  "error2'`
 {% endhint %}
