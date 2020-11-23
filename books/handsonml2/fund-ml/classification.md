@@ -7,30 +7,30 @@ Consider a binary classification problem, with 1 representing **positive**, and 
 **FP** \(false positive\) and **FN** \(false negative\) are often called **Type I Error** and **Type II Error**. We will get into details when we discuss **Confusion** **matrix** \(special type of **contingency tables**\).
 
 {% hint style="info" %}
-Note: I will mainly discuss binary classification problems as multi-class problems are generalization of binary ones. Whereas binary classifiers distinguish between two classes, **multiclass** \(also called **multinomial**\) classifiers can distinguish between more than two classes. Some algorithms \(such as **SGD**, **Random Forest**, and **naive Bayes** classifiers\) are **capable** of handling multiple classes **natively**. Others \(such as **Logistic Regression** or **Support Vector Machine** classifiers\) are **strictly** **binary** classifiers. However, there are various strategies that you can use to perform multiclass classification with multiple binary classifiers. There are mainly two approaches for multi-class classification problems that utilizes binary classification:
+Note: I will mainly discuss binary classification problems as multi-class problems are generalization of binary ones.
 {% endhint %}
+
+ While _binary_ classifiers distinguish between two classes, **multiclass** \(also called **multinomial**\) classifiers can distinguish between more than two classes. Some algorithms \(such as _SGD_, _Random Forest_, and _naive Bayes_ classifiers\) are **capable** of handling multiple classes **natively**. Others \(such as _Logistic Regression_ or _Support Vector Machine_ classifiers\) are **strictly** _binary classifiers_. However, there are various strategies that you can use to perform multiclass classification with multiple binary classifiers. The two Main approaches for multi-class classification problems that utilizes binary classification are: **OvR** and **OvO**.
 
 {% hint style="success" %}
 * One vs Rest \(**OvR**\): It focuses only **one** class at a time and the rest of the classes are called **other**. It is also called the one-versus-all \(**OvA**\) method.
 
 **Example:** MNIST dataset\(classes **0-9**\): 1 - classifier, 2 - classifier, ..., 9 - classifier.
-
-One way to create a system that can classify the digit images into 10 classes \(from 0 to 9\) is to train 10 binary classifiers $$\sim \mathcal{O}(N)$$, one for each digit \(a 0-detector, a 1-detector, a 2- detector, and so on\). Then when you want to classify an image, you get the decision score from each classifier for that image and you select the class whose classifier outputs the **highest score.**
 {% endhint %}
+
+One way to create a system that can classify the digit images into 10 classes \(from 0 to 9\) is to train 10 binary classifiers \(time complexity $$\sim \mathcal{O}(N)$$\), one for each digit \(a 0-detector, a 1-detector, a 2- detector, and so on\). Then when you want to classify an image, you get the decision score from each classifier for that image and you select the class whose classifier outputs the **highest score.**
 
 {% hint style="success" %}
 * One vs One \(**OvO**\): Trains a binary classifier for every pair of classes, in total $$\dfrac{N × (N-1)}{2}$$ binary classification problems for N number of classes.
 
 **Example:** MNIST dataset \(classes **0-9\):** 0 vs 1,..., 0 vs 9, 1 vs 2, ..., 1 vs 9, ... 8 vs 9
-
-The main advantage of OvO is that each classifier will be trained only on the part of training set where two classes appear. So it is much **faster** and require **less memory** than OvR, but the number of classifiers to be trained grows fast $$\sim \mathcal{O}(N^2).$$ Support vector machines for example scale **poorly** with _the size of train_ set, hence **OvO** is preferred as it is _faster_ and the train sets are _smaller_.
 {% endhint %}
+
+The main advantage of OvO is that each classifier will be trained only on the part of training set where two classes appear. So it is much **faster** and require **less memory** than OvR, but the number of classifiers to be trained grows fast \(time complexity $$\sim \mathcal{O}(N^2)$$\). _Support vector machines_ for example scale **poorly** with _the size of training_ set; hence, **OvO** is preferred and it is _faster_ and the training sets are _smaller_.
 
 **Accuracy:** The most naive approach to measure a model's performance in a binary classification problem is calculating the ratio of correct predictions, which is called **accuracy**.
 
-```text
-       $$\text{Accuracy} = \dfrac{\text{\# Correct Predictions}}{\text{\# Total Predictions}} = \dfrac{TP + TN}{TP+FP+TN+FN}$$ 
-```
+            $$\textbf{Accuracy} = \dfrac{\text{\# Correct Predictions}}{\text{\# \ \ Total \ \ Predictions}} = \dfrac{TP + TN}{TP+FP+TN+FN} $$ 
 
 {% hint style="danger" %}
 **Caution:** Accuracy alone doesn't give enough information about the model's performance, as in **class-imbalanced** datasets, \(such as in **anomaly detection** problems\) there are significant disparity between the number of positive and negative labels. Consider a simple model predicts all of the instances as normal, since the percentage of anomalies much smaller than normal instances this naive model would yield a really high accuracy score, which is **misleading**.
