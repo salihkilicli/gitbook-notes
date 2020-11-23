@@ -56,5 +56,5 @@ Notice, similarly we can define $$\text{FPR (False Positive Rate)} = 1 - \textbf
 
 It is also often convenient to combine **precision** and **recall** into a single metric called the **F1-Score**, in particular if you need a simple way to compare two classifiers. The F1-score is the _harmonic mean_ of _precision_ and _recall_ . Whereas the regular mean treats all values equally, the harmonic mean gives much more weight to low values. As a result, the classifier will only get a **high** F1-score if _both recall_ and _precision_ are **high**.
 
-$$\textbf{F1-Score} = \dfrac{2 * \textbf{Precision} * \textbf{Recall}}{\textbf{Precision} + \textbf{Precision}} = \dfrac{2}{\dfrac{1}{\textbf{Precision}} + \dfrac{1}{\textbf{Recall}}} = \text{HM(\textbf{P}, \textbf{R})}$$
+$$\textbf{F1-Score} = \dfrac{2 * \text{Precision} * \text{Recall}}{\text{Precision} + \text{Precision}} = \dfrac{2}{\dfrac{1}{\text{Precision}} + \dfrac{1}{\text{Recall}}} = \textbf{HM(\text{P}, \text{R})}$$
 
