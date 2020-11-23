@@ -50,7 +50,7 @@ $$ \textbf{Recall (Sensitivity)} = \dfrac{TP}{TP + FN}  \ \text{(TPR := True Pos
 
 $$  \textbf{Specificity} = \dfrac{TN}{TN + FP} =1 - \dfrac{FP}{FP + TN}  \ \text{(1 - False Positive Rate)}$$
 
-Notice, similarly we can define  $$ \text{(False Positive Rate) FPR} = 1 - \textbf{Specificity}.$$These three metrics are very important as it is a common practice to visualize the scatter plot of **Precision** vs **Recall** and **TPR** \(Recall, Sensitivity\) vs **FPR** \(1-Specificity\), which is also called **ROC** \(Receiver Operating Characteristic\) curve, and calculating the area under the **ROC** curve, called **AUC**, in order to evaluate model's predictive power.
+Notice, similarly we can define  $$ \text{FPR (False Positive Rate)} = 1 - \textbf{Specificity}.$$These three metrics are very important as it is a common practice to visualize the scatter plot of **Precision** vs **Recall** and **TPR** \(Recall, Sensitivity\) vs **FPR** \(1-Specificity\), which is also called **ROC** \(Receiver Operating Characteristic\) curve, and calculating the area under the **ROC** curve, called **AUC**, in order to evaluate model's predictive power.
 
 It is also often convenient to combine **precision** and **recall** into a single metric called the **F1-Score**, in particular if you need a simple way to compare two classifiers. The F1-score is the _harmonic mean_ of _precision_ and _recall_ . Whereas the regular mean treats all values equally, the harmonic mean gives much more weight to low values. As a result, the classifier will only get a **high** F1-score if _both recall_ and _precision_ are **high**.
 
