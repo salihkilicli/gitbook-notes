@@ -34,8 +34,10 @@ The main advantage of OvO is that each classifier will be trained only on the pa
 
 {% hint style="danger" %}
 **Caution:** Accuracy alone doesn't give enough information about the model's performance, as in **class-imbalanced** datasets, \(such as in **anomaly detection** problems\) there are significant disparity between the number of positive and negative labels. Consider a simple model predicts all of the instances as normal, since the percentage of anomalies much smaller than normal instances this naive model would yield a really high accuracy score, which is **misleading**.
+{% endhint %}
 
-**Example:** Consider a fraud detection \(classification\) problem, in which the percent of fradulent transactions is less than **\*\***$$\leq 1\%$$ **, then a naive model predicting every transaction as** non-fradulent **would yield an accuracy** $$≥ 99 \%$$**, which is overly optimistic for different datasets where the data is** more balanced\*\*.
+{% hint style="danger" %}
+**Example:** Consider a fraud detection \(classification\) problem, in which the percent of fradulent transactions is less than $$\leq 1\%$$ **,** then a _naive model_ predicting every transaction as **non-fradulent** would yield an accuracy $$≥ 99 \%$$, which is overly optimistic for different datasets where the _data is more balanced_.
 {% endhint %}
 
 ### Confusion Matrix
