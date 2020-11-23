@@ -1,6 +1,6 @@
 # 3. Classification
 
-## Classification Metrics
+## 3.1. Classification Metrics
 
 Consider a binary classification problem, with 1 representing **positive**, and 0 representing **negative** class. A **true** \(**false**\) **positive** is an outcome where the model correctly \(incorrectly\) predicts the **positive** class. Similarly, a **true** \(**false**\) **negative** is an outcome where the model correctly predicts the **negative** class. 
 
