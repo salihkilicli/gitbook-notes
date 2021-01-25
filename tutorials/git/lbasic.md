@@ -15,16 +15,8 @@ description: >-
   </thead>
   <tbody>
     <tr>
-      <td style="text-align:left"></td>
-      <td style="text-align:left"></td>
-    </tr>
-    <tr>
       <td style="text-align:left"><b>Navigation Commands</b>
       </td>
-      <td style="text-align:left"></td>
-    </tr>
-    <tr>
-      <td style="text-align:left"></td>
       <td style="text-align:left"></td>
     </tr>
     <tr>
@@ -102,10 +94,6 @@ description: >-
       <td style="text-align:left">&lt;b&gt;&lt;/b&gt;</td>
     </tr>
     <tr>
-      <td style="text-align:left"></td>
-      <td style="text-align:left"></td>
-    </tr>
-    <tr>
       <td style="text-align:left"><b><code>echo &lt;&quot;string&quot;&gt;</code></b>
       </td>
       <td style="text-align:left">Prints the given string</td>
@@ -158,10 +146,6 @@ description: >-
       <td style="text-align:left"><b>File Manipulation</b>
       </td>
       <td style="text-align:left">&lt;b&gt;&lt;/b&gt;</td>
-    </tr>
-    <tr>
-      <td style="text-align:left"></td>
-      <td style="text-align:left"></td>
     </tr>
     <tr>
       <td style="text-align:left"><b><code>mkdir &lt;name&gt;</code></b>
