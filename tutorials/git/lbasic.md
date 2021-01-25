@@ -5,7 +5,7 @@ description: >-
   alphabetically.
 ---
 
-# Linux / Shell Basics
+# Linux \| Shell Basics
 
 <table>
   <thead>

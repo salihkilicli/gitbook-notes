@@ -18,7 +18,7 @@
     * [Pandas](tutorials/python/important-libraries/pandas.md)
     * [Scikit-learn](tutorials/python/important-libraries/scikit-learn.md)
 * [Version Control](tutorials/git/README.md)
-  * [Linux / Shell Basics](tutorials/git/lbasic.md)
+  * [Linux \| Shell Basics](tutorials/git/lbasic.md)
   * [Git Commands & GitHub](tutorials/git/git-commands.md)
 * [Machine Learning](tutorials/ml.md)
 * [Deep Learning](tutorials/dl.md)
