@@ -10,8 +10,10 @@ description: >-
 <table>
   <thead>
     <tr>
-      <th style="text-align:left">Command Type</th>
-      <th style="text-align:left">Purpose</th>
+      <th style="text-align:left"><b>Command Type</b>
+      </th>
+      <th style="text-align:left"><b>Usage</b>
+      </th>
     </tr>
   </thead>
   <tbody>
