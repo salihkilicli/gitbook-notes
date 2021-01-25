@@ -66,7 +66,7 @@ description: >-
       <td style="text-align:left"><b><code>(Dash) -</code></b>
       </td>
       <td style="text-align:left">
-        <p>Stands for the recent directory located</p>
+        <p>Stands for the recent directory located (or flags see below)</p>
         <ul>
           <li><b><code>-</code></b> represents<b><code>dir1/dir2</code></b> (previous
             directory)</li>
@@ -78,7 +78,7 @@ description: >-
       </td>
       <td style="text-align:left">
         <p>Characters after a dash symbol following a command stands for options
-          for that command to be executed</p>
+          (flags) for that command to be executed</p>
         <ul>
           <li>Example: <b><code>ls</code></b> lists files in the current folder whereas <b><code>ls -a</code></b> or <b><code>ls -all</code></b> lists
             all - including hidden ones</li>
