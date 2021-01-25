@@ -52,7 +52,30 @@ description: >-
     <tr>
       <td style="text-align:left"><b><code>date</code></b>
       </td>
-      <td style="text-align:left">Prints the full date</td>
+      <td style="text-align:left">
+        <p>Prints the full date with other details</p>
+        <ul>
+          <li>(Default): <b><code>Day Month #Day hh:mm:ss TimeZone yyyy</code></b>
+          </li>
+          <li>Example: <b><code>Mon Jan 25 14:18:52 CST 2021</code></b>
+          </li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <td style="text-align:left"><b><code>cal</code></b>
+      </td>
+      <td style="text-align:left">Displays the monthly calendar</td>
+    </tr>
+    <tr>
+      <td style="text-align:left"><b><code>history</code></b>
+      </td>
+      <td style="text-align:left">Prints the last commands typed in the terminal</td>
+    </tr>
+    <tr>
+      <td style="text-align:left"><b><code>clear</code></b>
+      </td>
+      <td style="text-align:left">Clears the terminal page (moves up the previous commands)</td>
     </tr>
     <tr>
       <td style="text-align:left"><b><code>du</code></b>
@@ -88,6 +111,11 @@ description: >-
       <td style="text-align:left"><b><code>exit</code></b>
       </td>
       <td style="text-align:left">Logs out of terminal (Ctrl+D)</td>
+    </tr>
+    <tr>
+      <td style="text-align:left"><b><code>ssh &lt;link&gt;</code></b>
+      </td>
+      <td style="text-align:left">Connects to a virtual link using secure shell</td>
     </tr>
     <tr>
       <td style="text-align:left"></td>
