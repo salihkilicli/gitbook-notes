@@ -576,9 +576,9 @@ description: >-
 
 **0\)** [**https://ubuntu.com/tutorials/command-line-for-beginners\#1-overview**](https://ubuntu.com/tutorials/command-line-for-beginners#1-overview)\*\*\*\*
 
-**1\)** [**https://ryanstutorials.net/linuxtutorial/**](https://ryanstutorials.net/linuxtutorial/)\*\*\*\*
+**1\)** [**https://www.pluralsight.com/guides/beginner-linux-navigation-manual**](https://www.pluralsight.com/guides/beginner-linux-navigation-manual)\*\*\*\*
 
-**2\)**  [**https://www.pluralsight.com/guides/beginner-linux-navigation-manual**](https://www.pluralsight.com/guides/beginner-linux-navigation-manual)\*\*\*\*
+**2\)**  [**https://ryanstutorials.net/linuxtutorial/**](https://ryanstutorials.net/linuxtutorial/)\*\*\*\*
 
 **3\)** [**https://maker.pro/linux/tutorial/basic-linux-commands-for-beginners**](https://maker.pro/linux/tutorial/basic-linux-commands-for-beginners)\*\*\*\*
 
