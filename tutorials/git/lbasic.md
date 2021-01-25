@@ -70,6 +70,11 @@ description: >-
       <td style="text-align:left">Concatenate - Multiple purpose</td>
     </tr>
     <tr>
+      <td style="text-align:left"><b><code>locate &lt;file&gt;</code></b>
+      </td>
+      <td style="text-align:left">Locates (searches for) the file in the Linux system</td>
+    </tr>
+    <tr>
       <td style="text-align:left"><b><code>shutdown &lt;time&gt;</code></b>
       </td>
       <td style="text-align:left">Shuts down the system at a given time</td>
@@ -136,7 +141,7 @@ description: >-
     <tr>
       <td style="text-align:left"><b><code>grep &lt;content&gt; &lt;text&gt;</code></b>
       </td>
-      <td style="text-align:left">Searches for <b>content </b>in the text file</td>
+      <td style="text-align:left">Searches (filters) for the <b>content </b>in the text file</td>
     </tr>
     <tr>
       <td style="text-align:left"><b><code>sort &lt;file&gt;</code></b>
@@ -221,12 +226,17 @@ description: >-
       </td>
     </tr>
     <tr>
+      <td style="text-align:left"><b><code>cut &lt;options&gt; &lt;file&gt;</code></b>
+      </td>
+      <td style="text-align:left">Cuts a specific part of the file</td>
+    </tr>
+    <tr>
       <td style="text-align:left"><b><code>ln &lt;source&gt; &lt;link&gt;</code></b>
       </td>
       <td style="text-align:left">
-        <p>Creates hard / symbolic (<b><code>-s</code></b> option) links between files
-          <br
-          />In order to remove the symbolic links use either:</p>
+        <p>Creates a physical / symbolic (<b><code>-s</code></b> option) links between
+          files
+          <br />In order to remove the symbolic links use either:</p>
         <ul>
           <li><b><code>unlink &lt;link&gt;</code></b> or <b><code>rm &lt;link&gt;</code></b>
           </li>
