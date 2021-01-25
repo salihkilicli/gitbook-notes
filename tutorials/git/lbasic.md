@@ -572,7 +572,7 @@ description: >-
   </tbody>
 </table>
 
-**References:**
+                                                                         **References:**                                                                        
 
 **0\)** [**https://ubuntu.com/tutorials/command-line-for-beginners\#1-overview**](https://ubuntu.com/tutorials/command-line-for-beginners#1-overview)\*\*\*\*
 
