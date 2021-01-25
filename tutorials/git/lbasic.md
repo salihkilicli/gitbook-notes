@@ -109,7 +109,7 @@ description: >-
           </li>
           <li>Relative path of <b>dir1 </b>to <b>file.txt </b>file is:
             <ul>
-              <li><b><code>.. </code></b>(Notice we are still in <b>dir2 </b>folder)</li>
+              <li><b><code>..</code></b>(Notice we are still in <b>dir2 </b>folder)</li>
             </ul>
           </li>
         </ul>
