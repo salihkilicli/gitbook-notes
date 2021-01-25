@@ -50,6 +50,73 @@ description: >-
       <td style="text-align:left">Prints the time takes to execute the command</td>
     </tr>
     <tr>
+      <td style="text-align:left"><b><code>history</code></b>
+      </td>
+      <td style="text-align:left">Prints the last commands typed in the terminal</td>
+    </tr>
+    <tr>
+      <td style="text-align:left"><b><code>clear</code></b>
+      </td>
+      <td style="text-align:left">Clears the terminal page (Ctrl+L)</td>
+    </tr>
+    <tr>
+      <td style="text-align:left"><b><code>cat</code></b>
+      </td>
+      <td style="text-align:left">Concatenate - Multiple purpose</td>
+    </tr>
+    <tr>
+      <td style="text-align:left"><b><code>file &lt;filename&gt;</code></b>
+      </td>
+      <td style="text-align:left">Displays the type of file given with <b>filename</b>
+      </td>
+    </tr>
+    <tr>
+      <td style="text-align:left"><b><code>locate &lt;file&gt;</code></b>
+      </td>
+      <td style="text-align:left">Locates (searches for) the file in the Linux system</td>
+    </tr>
+    <tr>
+      <td style="text-align:left"><b><code>shutdown &lt;time&gt;</code></b>
+      </td>
+      <td style="text-align:left">
+        <p>Shuts down the system at a given time</p>
+        <ul>
+          <li><b><code>shutdown -h now</code></b> - Shutdown the system immediately</li>
+          <li><b><code>shutdown -r now</code></b> - Reboot the system immediately</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <td style="text-align:left"><b><code>reboot</code></b>
+      </td>
+      <td style="text-align:left">Stops and restarts the system</td>
+    </tr>
+    <tr>
+      <td style="text-align:left"><b><code>exit</code></b>
+      </td>
+      <td style="text-align:left">Logs out of terminal (Ctrl+D)</td>
+    </tr>
+    <tr>
+      <td style="text-align:left"></td>
+      <td style="text-align:left"></td>
+    </tr>
+    <tr>
+      <td style="text-align:left"><b>Displaying System Info</b>
+      </td>
+      <td style="text-align:left">&lt;b&gt;&lt;/b&gt;</td>
+    </tr>
+    <tr>
+      <td style="text-align:left"><b><code>w</code></b>
+      </td>
+      <td style="text-align:left">Displays the online user information</td>
+    </tr>
+    <tr>
+      <td style="text-align:left"><b><code>whoami</code></b>
+      </td>
+      <td style="text-align:left">Displays the current <b>username</b>
+      </td>
+    </tr>
+    <tr>
       <td style="text-align:left"><b><code>date</code></b>
       </td>
       <td style="text-align:left">
@@ -68,19 +135,14 @@ description: >-
       <td style="text-align:left">Displays the monthly calendar</td>
     </tr>
     <tr>
-      <td style="text-align:left"><b><code>history</code></b>
+      <td style="text-align:left"><b><code>finger &lt;user&gt;</code></b>
       </td>
-      <td style="text-align:left">Prints the last commands typed in the terminal</td>
-    </tr>
-    <tr>
-      <td style="text-align:left"><b><code>clear</code></b>
-      </td>
-      <td style="text-align:left">Clears the terminal page (moves up the previous commands)</td>
+      <td style="text-align:left">Displays user information</td>
     </tr>
     <tr>
       <td style="text-align:left"><b><code>du</code></b>
       </td>
-      <td style="text-align:left">Shows disk usage</td>
+      <td style="text-align:left">Shows directory space usage</td>
     </tr>
     <tr>
       <td style="text-align:left"><b><code>df</code></b>
@@ -88,34 +150,14 @@ description: >-
       <td style="text-align:left">Shows a report on the disk space usage</td>
     </tr>
     <tr>
-      <td style="text-align:left"><b><code>cat</code></b>
+      <td style="text-align:left"><b><code>whereis &lt;app&gt;</code></b>
       </td>
-      <td style="text-align:left">Concatenate - Multiple purpose</td>
+      <td style="text-align:left">Displays the location of the application</td>
     </tr>
     <tr>
-      <td style="text-align:left"><b><code>locate &lt;file&gt;</code></b>
+      <td style="text-align:left"><b><code>which &lt;app&gt;</code></b>
       </td>
-      <td style="text-align:left">Locates (searches for) the file in the Linux system</td>
-    </tr>
-    <tr>
-      <td style="text-align:left"><b><code>shutdown &lt;time&gt;</code></b>
-      </td>
-      <td style="text-align:left">Shuts down the system at a given time</td>
-    </tr>
-    <tr>
-      <td style="text-align:left"><b><code>reboot</code></b>
-      </td>
-      <td style="text-align:left">Stops and restarts the system</td>
-    </tr>
-    <tr>
-      <td style="text-align:left"><b><code>exit</code></b>
-      </td>
-      <td style="text-align:left">Logs out of terminal (Ctrl+D)</td>
-    </tr>
-    <tr>
-      <td style="text-align:left"><b><code>ssh &lt;link&gt;</code></b>
-      </td>
-      <td style="text-align:left">Connects to a virtual link using secure shell</td>
+      <td style="text-align:left">Displays the default version of the app</td>
     </tr>
     <tr>
       <td style="text-align:left"></td>
@@ -236,7 +278,7 @@ description: >-
     <tr>
       <td style="text-align:left"><b><code>touch &lt;file1&gt; &lt;file2&gt;</code></b>
       </td>
-      <td style="text-align:left">Creates a new file or files</td>
+      <td style="text-align:left">Creates a new file or files - <em>file 1</em> (and <em>file 2</em>)</td>
     </tr>
     <tr>
       <td style="text-align:left"><b><code>cp &lt;file&gt; &lt;new_name&gt;</code></b>
@@ -276,9 +318,142 @@ description: >-
       <td style="text-align:left"></td>
     </tr>
     <tr>
+      <td style="text-align:left"><b>Piping and Redirection</b>
+      </td>
+      <td style="text-align:left"></td>
+    </tr>
+    <tr>
+      <td style="text-align:left"><b><code>file1 | file2</code></b>
+      </td>
+      <td style="text-align:left">Redirects (STDOUT) <b>output</b> of <em>file 1</em> to (STDIN) <b>input</b> of <em>file 2</em>
+      </td>
+    </tr>
+    <tr>
+      <td style="text-align:left"><b><code>file1 &gt; file2</code></b>
+      </td>
+      <td style="text-align:left">
+        <p>Saves/redirects the (STDOUT) <b>output</b> of<em> file 1</em> to<em> file 2</em>
+        </p>
+        <ul>
+          <li>Will <b>overwrite</b> the final output each time used</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <td style="text-align:left"><b><code>file1 &gt;&gt; file2</code></b>
+      </td>
+      <td style="text-align:left">Appends (STDOUT) <b>output</b> of <em>file 1</em> to<em> file 2 - <b>w/o overwriting</b></em>
+      </td>
+    </tr>
+    <tr>
+      <td style="text-align:left"><b><code>file1 2&gt; file2</code></b>
+      </td>
+      <td style="text-align:left">Redirects the (STDERR) <b>error message</b> of <em>file 1</em> to <em>file 2</em>
+      </td>
+    </tr>
+    <tr>
+      <td style="text-align:left"><b><code>command &lt; file2</code></b>
+      </td>
+      <td style="text-align:left">Passes the <b>contents</b> of the<em> file 2 </em>(STDIN) to a program</td>
+    </tr>
+    <tr>
       <td style="text-align:left"></td>
       <td style="text-align:left"></td>
     </tr>
+    <tr>
+      <td style="text-align:left"><b>Shortcuts</b>
+      </td>
+      <td style="text-align:left">&lt;b&gt;&lt;/b&gt;</td>
+    </tr>
+    <tr>
+      <td style="text-align:left"><b><code>CTRL + A</code></b> or <b><code>HOME</code></b>
+      </td>
+      <td style="text-align:left">Moves the cursor to the <b>beginning</b> of the line</td>
+    </tr>
+    <tr>
+      <td style="text-align:left"><b><code>CTRL + B</code></b> or &#x21E6;</td>
+      <td style="text-align:left">Moves the cursor back one character at a time</td>
+    </tr>
+    <tr>
+      <td style="text-align:left"><b><code>CTRL + C</code></b>
+      </td>
+      <td style="text-align:left">Terminates the current running process</td>
+    </tr>
+    <tr>
+      <td style="text-align:left"><b><code>CTRL + D</code></b>
+      </td>
+      <td style="text-align:left">Exits the bash shell - same with <b><code>Exit</code></b> command</td>
+    </tr>
+    <tr>
+      <td style="text-align:left"><b><code>CTRL + E</code></b> or <b><code>END</code></b>
+      </td>
+      <td style="text-align:left">Moves the cursor to the <b>ending</b> of the line</td>
+    </tr>
+    <tr>
+      <td style="text-align:left"><b><code>CTRL + F</code></b> or &#x21E8;</td>
+      <td style="text-align:left">Moves the cursor forward one character at a time</td>
+    </tr>
+    <tr>
+      <td style="text-align:left"><b><code>CTRL + L</code></b>
+      </td>
+      <td style="text-align:left">Clears the terminal (Moves the previous commands up)</td>
+    </tr>
+    <tr>
+      <td style="text-align:left"><b><code>CTRL + Q</code></b>
+      </td>
+      <td style="text-align:left"><b>Unfreeze</b>s the terminal (<b>doesn&apos;t</b> work in MacOS)</td>
+    </tr>
+    <tr>
+      <td style="text-align:left"><b><code>CTRL + S</code></b>
+      </td>
+      <td style="text-align:left"><b>Freeze</b>s the terminal (<b>doesn&apos;t</b> work in MacOS)</td>
+    </tr>
+    <tr>
+      <td style="text-align:left"></td>
+      <td style="text-align:left"></td>
+    </tr>
+    <tr>
+      <td style="text-align:left"><b><code>CTRL + Z</code></b>
+      </td>
+      <td style="text-align:left">Pauses the current running process</td>
+    </tr>
+    <tr>
+      <td style="text-align:left"><b>&lt;code&gt;&lt;/code&gt;</b>
+      </td>
+      <td style="text-align:left"></td>
+    </tr>
+    <tr>
+      <td style="text-align:left"><b>&lt;code&gt;&lt;/code&gt;</b>
+      </td>
+      <td style="text-align:left"></td>
+    </tr>
+    <tr>
+      <td style="text-align:left"><b>&lt;code&gt;&lt;/code&gt;</b>
+      </td>
+      <td style="text-align:left"></td>
+    </tr>
+    <tr>
+      <td style="text-align:left"><b>&lt;code&gt;&lt;/code&gt;</b>
+      </td>
+      <td style="text-align:left"></td>
+    </tr>
+    <tr>
+      <td style="text-align:left"><b>&lt;code&gt;&lt;/code&gt;</b>
+      </td>
+      <td style="text-align:left"></td>
+    </tr>
+    <tr>
+      <td style="text-align:left"><b><code>TAB</code></b>
+      </td>
+      <td style="text-align:left">Use <b><code>TAB</code></b> while typing to auto complete the path/file
+        names</td>
+    </tr>
+    <tr>
+      <td style="text-align:left">&#x21E7; / &#x21E9;</td>
+      <td style="text-align:left">Use up &amp; down arrows to display previously typed commands</td>
+    </tr>
   </tbody>
 </table>
+
+
 
