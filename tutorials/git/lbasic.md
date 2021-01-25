@@ -146,12 +146,13 @@ description: >-
     <tr>
       <td style="text-align:left"><b><code>ls &lt;dir&gt;</code></b>
       </td>
-      <td style="text-align:left">Lists all the files in given / current dir</td>
+      <td style="text-align:left">Lists all (<b><code>-a</code></b> includes hidden) files in given / current
+        dir</td>
     </tr>
     <tr>
       <td style="text-align:left"><b><code>man &lt;command&gt;</code></b>
       </td>
-      <td style="text-align:left">Opens the manual for the command</td>
+      <td style="text-align:left">Opens the user manual for the command</td>
     </tr>
     <tr>
       <td style="text-align:left"><b><code>&lt;command&gt; --help</code></b>
@@ -161,12 +162,12 @@ description: >-
     <tr>
       <td style="text-align:left"><b><code>time &lt;command&gt;</code></b>
       </td>
-      <td style="text-align:left">Prints the time takes to execute the command</td>
+      <td style="text-align:left">Prints the time it takes to execute the command</td>
     </tr>
     <tr>
       <td style="text-align:left"><b><code>history</code></b>
       </td>
-      <td style="text-align:left">Prints the last commands typed in the terminal</td>
+      <td style="text-align:left">Prints the last commands typed on the terminal</td>
     </tr>
     <tr>
       <td style="text-align:left"><b><code>clear</code></b>
