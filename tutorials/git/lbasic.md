@@ -27,27 +27,27 @@ description: >-
     <tr>
       <td style="text-align:left"><b><code>cd &lt;dir&gt;</code></b>
       </td>
-      <td style="text-align:left">Changes directory to given directory (folder)</td>
+      <td style="text-align:left">Changes directory to dir (folder)</td>
     </tr>
     <tr>
       <td style="text-align:left"><b><code>ls &lt;dir&gt;</code></b>
       </td>
-      <td style="text-align:left">Lists all the files in given / current directory</td>
+      <td style="text-align:left">Lists all the files in given / current dir</td>
     </tr>
     <tr>
       <td style="text-align:left"><b><code>man &lt;command&gt;</code></b>
       </td>
-      <td style="text-align:left">Opens the manual for the given command</td>
+      <td style="text-align:left">Opens the manual for the command</td>
     </tr>
     <tr>
       <td style="text-align:left"><b><code>&lt;command&gt; --help</code></b>
       </td>
-      <td style="text-align:left">Opens the help page for the given command</td>
+      <td style="text-align:left">Opens the help page for the command</td>
     </tr>
     <tr>
       <td style="text-align:left"><b><code>time &lt;command&gt;</code></b>
       </td>
-      <td style="text-align:left">Prints the time takes to execute the given command</td>
+      <td style="text-align:left">Prints the time takes to execute the command</td>
     </tr>
     <tr>
       <td style="text-align:left"><b><code>date</code></b>
@@ -96,18 +96,18 @@ description: >-
     <tr>
       <td style="text-align:left"><b><code>echo &lt;&quot;string&quot;&gt;</code></b>
       </td>
-      <td style="text-align:left">Prints the given string</td>
+      <td style="text-align:left">Prints the string</td>
     </tr>
     <tr>
       <td style="text-align:left"><b><code>cat &lt;file&gt;</code></b>
       </td>
-      <td style="text-align:left">Prints the contents of the given file</td>
+      <td style="text-align:left">Prints the contents of the file</td>
     </tr>
     <tr>
       <td style="text-align:left"><b><code>less &lt;file&gt;</code></b>
       </td>
       <td style="text-align:left">
-        <p>Displays the contents of the given file</p>
+        <p>Displays the contents of the file</p>
         <ul>
           <li>Can navigate forward and backward through file</li>
         </ul>
@@ -137,6 +137,16 @@ description: >-
       <td style="text-align:left"><b><code>grep &lt;content&gt; &lt;text&gt;</code></b>
       </td>
       <td style="text-align:left">Searches for <b>content </b>in the text file</td>
+    </tr>
+    <tr>
+      <td style="text-align:left"><b><code>sort &lt;file&gt;</code></b>
+      </td>
+      <td style="text-align:left">Sorts the contents of the file</td>
+    </tr>
+    <tr>
+      <td style="text-align:left"><b><code>wc &lt;file&gt;</code></b>
+      </td>
+      <td style="text-align:left">Displays the number of words (word count) in the file</td>
     </tr>
     <tr>
       <td style="text-align:left"></td>
@@ -224,8 +234,7 @@ description: >-
       </td>
     </tr>
     <tr>
-      <td style="text-align:left"><b>&lt;code&gt;&lt;/code&gt;</b>
-      </td>
+      <td style="text-align:left"></td>
       <td style="text-align:left"></td>
     </tr>
     <tr>
