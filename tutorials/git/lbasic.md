@@ -28,9 +28,9 @@ description: >-
       <td style="text-align:left">
         <p>Used to denote following directories in the root tree</p>
         <ul>
-          <li><b><code>/parent/child</code></b>directs to <b>child</b> folder inside the <b>parent</b> folder</li>
-          <li><b><code>/parent/child/file1.txt</code></b> directs to <b>file1</b> text
-            file inside the <b>child</b> folder, etc.</li>
+          <li><code>/parent/child</code>directs to <b>child</b> folder inside the <b>parent</b> folder</li>
+          <li><code>/parent/child/file1.txt</code> directs to <b>file1</b> text file inside
+            the <b>child</b> folder, etc.</li>
         </ul>
       </td>
     </tr>
@@ -38,10 +38,10 @@ description: >-
       <td style="text-align:left"><b><code>(Tilde) ~</code></b>
       </td>
       <td style="text-align:left">
-        <p>Shortcut for the home directory - <b><code>/home/username</code></b>
+        <p>Shortcut for the home directory - <code>/home/username</code>
         </p>
         <ul>
-          <li><b><code>~/Desktop</code></b> means <b><code>/home/username/Desktop</code></b>
+          <li><code>~/Desktop</code> means <code>/home/username/Desktop</code>
           </li>
         </ul>
       </td>
@@ -52,10 +52,9 @@ description: >-
       <td style="text-align:left">
         <p>Stands for the current directory you are located in</p>
         <ul>
-          <li>Say you are in <b><code>dir1/dir2/dir3</code></b> directory
+          <li>Say you are in <code>dir1/dir2/dir3</code> directory
             <ul>
-              <li><b><code>.</code></b> represents <b><code>dir1/dir2/dir3 </code></b>(current
-                dir)</li>
+              <li><b><code>.</code></b> represents <code>dir1/dir2/dir3</code>(current dir)</li>
             </ul>
           </li>
         </ul>
@@ -67,10 +66,8 @@ description: >-
       <td style="text-align:left">
         <p>Stands for the parent directory (one directory up in the tree)</p>
         <ul>
-          <li><b><code>..</code></b> represents <b><code>dir1/dir2</code></b> directory
-            (1 dir up)</li>
-          <li><b><code>../..</code></b> represents <b><code>/dir1 </code></b> directory
-            (2 dir up)</li>
+          <li><code>..</code> represents <code>dir1/dir2</code> directory (1 dir up)</li>
+          <li><code>../..</code> represents <code>/dir1 </code> directory (2 dir up)</li>
         </ul>
       </td>
     </tr>
@@ -80,8 +77,7 @@ description: >-
       <td style="text-align:left">
         <p>Stands for the recent directory located (or flags see below)</p>
         <ul>
-          <li><b><code>-</code></b> represents<b><code>dir1/dir2</code></b> (previous
-            directory)</li>
+          <li><b><code>-</code></b> represents<code>dir1/dir2</code> (previous directory)</li>
         </ul>
       </td>
     </tr>
@@ -91,10 +87,10 @@ description: >-
       <td style="text-align:left">
         <p>Used to skip characters if the name includes a space</p>
         <ul>
-          <li>Either use <b><code>\</code></b> or put inside a string to denote a new
-            including a blank in the path name</li>
-          <li><b><code>/dir1/new\ file</code></b> or <b><code>&quot;/dir1/new file.txt&quot;</code></b>is
-            used to denote the <b>&quot;new file.txt&quot;</b> text file in the <b>dir1</b> folder</li>
+          <li>Either use <code>\</code> or put inside a string to denote a new including
+            a blank in the path name</li>
+          <li><code>/dir1/new\ file</code> or <code>&quot;/dir1/new file.txt&quot;</code>is
+            used to denote the <b>&quot;new file.txt&quot; </b>text file in the <b>dir1</b> folder</li>
         </ul>
       </td>
     </tr>
@@ -105,7 +101,7 @@ description: >-
         <p>Used as a <em>wildcard</em> during searches - matches one of more occurrences
           of any character, including no character</p>
         <ul>
-          <li><b><code>ls -l a*</code></b> lists all files whose name is starting with <b>a</b>
+          <li><code>ls -l a*</code> lists all files whose name is starting with <b>a</b>
           </li>
         </ul>
       </td>
@@ -116,7 +112,7 @@ description: >-
       <td style="text-align:left">
         <p>Used as a <em>wildcard</em> to represent an anonymous character</p>
         <ul>
-          <li><b><code>ls e?d</code></b>lists all 3-character files starts with <b>e</b> and <b>d</b>
+          <li><code>ls e?d</code>lists all 3-character files starts with <b>e</b> and <b>d</b>
             <ul>
               <li>Possible results <b>end, eid</b>, etc.</li>
             </ul>
@@ -130,7 +126,7 @@ description: >-
       <td style="text-align:left">
         <p>Used as a <em>wildcard</em> to represent a character between brackets</p>
         <ul>
-          <li><b><code>ls l[aeoi]st</code></b>lists all 4-character files starts with <b>l</b> ands
+          <li><code>ls l[aeoi]st</code>lists all 4-character files starts with <b>l</b> ands
             with <b>st</b> if <b>[aeoi]</b> is one of the middle character.
             <ul>
               <li>Possible results <b>last, lost, list</b>, etc.</li>
@@ -146,9 +142,9 @@ description: >-
         <p>Characters after a dash symbol following a command stands for options
           (flags) for that command to be executed</p>
         <ul>
-          <li>Example: <b><code>ls</code></b> lists files in the current folder whereas <b><code>ls -a</code></b> or <b><code>ls -all</code></b> lists
+          <li>Example: <code>ls</code> lists files in the current folder whereas <code>ls -a</code> lists
             all - including hidden ones</li>
-          <li>Options (flags) for each command can be found in manual - use <b><code>man &lt;command&gt;</code></b> to
+          <li>Options (flags) for each command can be found in manual - use <code>man &lt;command&gt;</code> to
             see details</li>
         </ul>
       </td>
@@ -165,17 +161,17 @@ description: >-
       <td style="text-align:left">
         <p> <b>Relative path</b> to a <b>file</b> relative to the current directory</p>
         <ul>
-          <li>Say you are in <b><code>~/Desktop/dir1/dir2/file.txt</code></b>
+          <li>Say you are in <code>~/Desktop/dir1/dir2/file.txt</code>
           </li>
           <li>Absolute path of <b>dir1</b> folder is:
             <ul>
-              <li><b><code>/home/username/Desktop/parent</code></b>
+              <li><code>/home/username/Desktop/parent</code>
               </li>
             </ul>
           </li>
           <li>Relative path of <b>dir1 </b>to <b>file.txt </b>file is:
             <ul>
-              <li><b><code>..</code></b>(Notice we are still in <b>dir2 </b>folder)</li>
+              <li><code>..</code>(Notice we are still in <b>dir2 </b>folder)</li>
             </ul>
           </li>
         </ul>
@@ -202,10 +198,11 @@ description: >-
       <td style="text-align:left">
         <p>Changes directory to dir (folder)</p>
         <ul>
-          <li><b><code>cd .</code></b> moves to current dir (output of<b><code>pwd</code></b>)</li>
-          <li><b><code>cd ..</code></b> moves 1 directory up</li>
-          <li><b><code>cd ../.. </code></b>moves 2 directory up</li>
-          <li><b><code>cd -     </code></b>prints and moves to the recent directory</li>
+          <li><code>cd .</code> moves to current dir (output of<code>pwd</code>)</li>
+          <li><code>cd ..</code> moves 1 directory up</li>
+          <li><code>cd ../..</code><b><code> </code></b>moves 2 directory up</li>
+          <li><code>cd -</code><b><code>     </code></b>prints and moves to the recent
+            directory</li>
         </ul>
       </td>
     </tr>
@@ -215,9 +212,9 @@ description: >-
       <td style="text-align:left">
         <p>Lists all (excluding hidden) files in a given / current dir</p>
         <ul>
-          <li>Use <b><code>-a</code></b> flag to list hidden files (<b><code>.hiddenfile</code></b>)</li>
-          <li>Use <b><code>-l</code></b> to list files in the tabular (long) format</li>
-          <li>Some flags can be combined - Example: <b><code>ls -al</code></b>
+          <li>Use <code>-a</code> flag to list hidden files (<code>.hiddenfile</code>)</li>
+          <li>Use <code>-l</code> to list files in the tabular (long) format</li>
+          <li>Some flags can be combined - Example: <code>ls -al</code>
           </li>
         </ul>
       </td>
@@ -269,8 +266,8 @@ description: >-
       <td style="text-align:left">
         <p>Shuts down the system at a given time</p>
         <ul>
-          <li><b><code>shutdown -h now</code></b> - Shutdown the system immediately</li>
-          <li><b><code>shutdown -r now</code></b> - Reboot the system immediately</li>
+          <li><code>shutdown -h now</code> - Shuts down the system immediately</li>
+          <li><code>shutdown -r now</code> - Reboot the system immediately</li>
         </ul>
       </td>
     </tr>
@@ -315,9 +312,9 @@ description: >-
       <td style="text-align:left">
         <p>Prints the full date with other details</p>
         <ul>
-          <li>(Default): <b><code>Day Month #Day hh:mm:ss TimeZone yyyy</code></b>
+          <li>(Default): <code>Day Month #Day hh:mm:ss TimeZone yyyy</code>
           </li>
-          <li>Example: <b><code>Mon Jan 25 14:18:52 CST 2021</code></b>
+          <li>Example: <code>Mon Jan 25 14:18:52 CST 2021</code>
           </li>
         </ul>
       </td>
@@ -443,7 +440,7 @@ description: >-
         <ul>
           <li>Can be used to rename files ass well
             <ul>
-              <li><b><code>mv &lt;file_name&gt; &lt;new_name&gt;</code></b>
+              <li><code>mv &lt;file_name&gt; &lt;new_name&gt;</code>
               </li>
             </ul>
           </li>
@@ -457,11 +454,11 @@ description: >-
         <p>Removes the given file - <b>cannot be undone</b>
         </p>
         <ul>
-          <li>Can<b>not</b> remove directories unless used with <b><code>-r</code></b> option
+          <li>Can<b>not</b> remove directories unless used with <code>-r</code> option
             <ul>
-              <li><b><code>rm -r &lt;dir&gt;</code></b>- <b>Recursively</b> deletes all files
-                in dir</li>
-              <li><b><code>rm -rf &lt;dir&gt;</code></b> - Does <b>not</b> ask for permit</li>
+              <li><code>rm -r &lt;dir&gt; </code>- <b>Recursively</b> deletes all files in
+                dir</li>
+              <li><code>rm -rf &lt;dir&gt;</code> - Does <b>not</b> ask for permit</li>
             </ul>
           </li>
         </ul>
@@ -484,9 +481,9 @@ description: >-
       <td style="text-align:left">
         <p>Copies the given file with a given new name</p>
         <ul>
-          <li>Can copy directories <b>recursively</b> with <b><code>-r</code></b> option
+          <li>Can copy directories <b>recursively</b> with <code>-r</code> option
             <ul>
-              <li><b><code>cp -r &lt;dir&gt; &lt;new_name&gt;</code></b>
+              <li><code>cp -r &lt;dir&gt; &lt;new_name&gt;</code>
               </li>
             </ul>
           </li>
@@ -502,11 +499,11 @@ description: >-
       <td style="text-align:left"><b><code>ln &lt;source&gt; &lt;link&gt;</code></b>
       </td>
       <td style="text-align:left">
-        <p>Creates a physical / symbolic (<b><code>-s</code></b> option) links between
-          files
-          <br />In order to remove the symbolic links use either:</p>
+        <p>Creates a physical / symbolic (<code>-s</code> option) links between files
+          <br
+          />In order to remove the symbolic links use either:</p>
         <ul>
-          <li><b><code>unlink &lt;link&gt;</code></b> or <b><code>rm &lt;link&gt;</code></b>
+          <li><code>unlink &lt;link&gt;</code> or <code>rm &lt;link&gt;</code>
           </li>
         </ul>
       </td>
