@@ -146,8 +146,15 @@ description: >-
     <tr>
       <td style="text-align:left"><b><code>ls &lt;dir&gt;</code></b>
       </td>
-      <td style="text-align:left">Lists all (<b><code>-a</code></b> includes hidden) files in given / current
-        dir</td>
+      <td style="text-align:left">
+        <p>Lists all (excluding hidden) files in a given / current dir</p>
+        <ul>
+          <li>Use <b><code>-a</code></b> flag to list hidden files</li>
+          <li>Use <b><code>-l</code></b> to list files in the tabular format</li>
+          <li>Some flags can be combined - Example: <b><code>ls -al</code></b>
+          </li>
+        </ul>
+      </td>
     </tr>
     <tr>
       <td style="text-align:left"><b><code>man &lt;command&gt;</code></b>

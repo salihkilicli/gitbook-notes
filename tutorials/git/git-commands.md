@@ -18,9 +18,22 @@ Simply put, Git helps users for tracking different versions of the software and 
 
 There are multiple options to install Git to your computer. First, open a terminal and check if Git is installed already and if so find the version of Git typing the command below:
 
-```text
-
+```bash
+>>> $ git version
+git version 2.28.0 # 2nd major, 28th minor and 0th patch version
 ```
 
+Since it is already install in my local computer, the command prints the version of current git install. 
 
+If Git is already installed, you can download the latest development version via Git by cloning the git [repository](https://github.com/git/git) or simply upgrade using brew \(in MacOS in my case\).
+
+```bash
+# clone the latest repo
+>>> git clone https://github.com/git/git
+
+# or upgrade the version
+>>> brew upgrade git
+```
+
+If it is your first time, you can download your preferred version of Git from [here](https://git-scm.com/downloads) and install it using the package installer. Follow the link for other options to install Git.
 
