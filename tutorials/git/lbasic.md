@@ -547,15 +547,6 @@ description: >-
       </td>
     </tr>
     <tr>
-      <td style="text-align:left"></td>
-      <td style="text-align:left"></td>
-    </tr>
-    <tr>
-      <td style="text-align:left"><b>Piping and Redirection</b>
-      </td>
-      <td style="text-align:left"></td>
-    </tr>
-    <tr>
       <td style="text-align:left"><b><code>file1 | file2</code></b>
       </td>
       <td style="text-align:left">Redirects (STDOUT) <b>output</b> of <em>file 1</em> to (STDIN) <b>input</b> of <em>file 2</em>
