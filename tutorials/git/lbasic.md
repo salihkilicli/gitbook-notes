@@ -575,7 +575,7 @@ description: >-
     </tr>
     <tr>
       <td style="text-align:left">&#x21E7; | &#x21E9;</td>
-      <td style="text-align:left">Use arrows to display previously typed commands</td>
+      <td style="text-align:left">Use up &amp; down arrows to display previously typed commands</td>
     </tr>
     <tr>
       <td style="text-align:left"><b><code>CTRL +</code></b>&#x21E6; or <b><code>ALT + B</code></b>
