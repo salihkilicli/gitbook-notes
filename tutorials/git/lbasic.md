@@ -149,7 +149,7 @@ description: >-
       <td style="text-align:left">
         <p>Lists all (excluding hidden) files in a given / current dir</p>
         <ul>
-          <li>Use <b><code>-a</code></b> flag to list hidden files</li>
+          <li>Use <b><code>-a</code></b> flag to list hidden files (<b><code>.hiddenfile</code></b>)</li>
           <li>Use <b><code>-l</code></b> to list files in the tabular (long) format</li>
           <li>Some flags can be combined - Example: <b><code>ls -al</code></b>
           </li>
