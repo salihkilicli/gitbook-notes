@@ -450,7 +450,7 @@ description: >-
   </tbody>
 </table>
 
-## 5. File Manupilation
+## 5. Manipulating Files
 
 <table>
   <thead>
