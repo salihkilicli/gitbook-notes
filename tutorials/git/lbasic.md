@@ -164,7 +164,7 @@ description: >-
       </td>
     </tr>
     <tr>
-      <td style="text-align:left"><b><code>../dir1/dir2/file</code></b>
+      <td style="text-align:left"><b><code>../dir1/dir2/file.txt</code></b>
       </td>
       <td style="text-align:left">
         <p> <b>Relative path</b> to a <b>file</b> relative to the current directory</p>
@@ -172,15 +172,16 @@ description: >-
         <ul>
           <li>Say you are in <code>~/Desktop/dir1/dir2/file.txt</code>
           </li>
-          <li>Absolute path of <b>dir1</b> folder is:
+          <li>Absolute path of <b>Desktop</b> folder is:
             <ul>
-              <li><code>/home/username/Desktop/dir1</code>
+              <li><code>/home/username/Desktop</code>or<code>~/Desktop</code>
               </li>
             </ul>
           </li>
-          <li>Relative path of <b>dir1 </b>to <b>file.txt </b>file is:
+          <li>Relative path of <b>Desktop </b>to <b>dir2 </b>folder is:
             <ul>
-              <li><code>..</code>(Notice we are still in <b>dir2 </b>folder)</li>
+              <li><code>../.. (.. </code>directs to <code>~/Desktop/dir1)</code>
+              </li>
             </ul>
           </li>
         </ul>
