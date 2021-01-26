@@ -568,16 +568,6 @@ description: >-
       <td style="text-align:left">Pauses the current running process</td>
     </tr>
     <tr>
-      <td style="text-align:left"><b><code>TAB</code></b>
-      </td>
-      <td style="text-align:left">Use <b><code>TAB</code></b> while typing to auto complete the path/file
-        names</td>
-    </tr>
-    <tr>
-      <td style="text-align:left">&#x21E7; | &#x21E9;</td>
-      <td style="text-align:left">Use up &amp; down arrows to display previously typed commands</td>
-    </tr>
-    <tr>
       <td style="text-align:left"><b><code>CTRL +</code></b>&#x21E6; or <b><code>ALT + B</code></b>
       </td>
       <td style="text-align:left">Moves the cursor back one <b>word</b> at a time</td>
@@ -586,6 +576,15 @@ description: >-
       <td style="text-align:left"><b><code>CTRL +</code></b>&#x21E6; or <b><code>ALT + C</code></b>
       </td>
       <td style="text-align:left">Moves the cursor forward one <b>word</b> at a time</td>
+    </tr>
+    <tr>
+      <td style="text-align:left"><b><code>TAB</code></b>
+      </td>
+      <td style="text-align:left">Use <b><code>TAB</code></b>to auto complete the path/file names</td>
+    </tr>
+    <tr>
+      <td style="text-align:left">&#x21E7; | &#x21E9;</td>
+      <td style="text-align:left">Use arrows to display previously typed commands</td>
     </tr>
   </tbody>
 </table>
