@@ -701,5 +701,7 @@ description: >-
 
 **4\)** [**https://www.tecmint.com/linux-command-line-bash-shortcut-keys/**](https://www.tecmint.com/linux-command-line-bash-shortcut-keys/)\*\*\*\*
 
+**5\)** [**The Linux Command Line**](http://linuxcommand.org/tlcl.php) by _**William Shotts**_
+
 \*\*\*\*
 
