@@ -306,7 +306,7 @@ description: >-
       <td style="text-align:left">Prints the contents of the file</td>
     </tr>
     <tr>
-      <td style="text-align:left"><b><code>open &lt;file&gt;</code></b>
+      <td style="text-align:left"><b><code>open &lt;filepath&gt;</code></b>
       </td>
       <td style="text-align:left">Opens the file in the given path</td>
     </tr>
