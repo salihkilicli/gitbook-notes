@@ -110,6 +110,7 @@ description: >-
         <ul>
           <li><code>ls -l a*</code> lists all files whose name is starting with <b>a</b>
           </li>
+          <li><code>ls -l A*</code><b> </b>lists different files as it is case sensitive</li>
         </ul>
       </td>
     </tr>
