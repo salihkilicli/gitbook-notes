@@ -54,7 +54,7 @@ description: >-
         <ul>
           <li>Say you are in <code>dir1/dir2/dir3</code> directory
             <ul>
-              <li><b><code>.</code></b> represents <code>dir1/dir2/dir3</code>(current dir)</li>
+              <li><code>.</code> represents <code>dir1/dir2/dir3</code>(current dir)</li>
             </ul>
           </li>
         </ul>
@@ -77,7 +77,7 @@ description: >-
       <td style="text-align:left">
         <p>Stands for the recent directory located (or flags see below)</p>
         <ul>
-          <li><b><code>-</code></b> represents<code>dir1/dir2</code> (previous directory)</li>
+          <li><code>-</code> represents<code>dir1/dir2</code> (previous directory)</li>
         </ul>
       </td>
     </tr>
