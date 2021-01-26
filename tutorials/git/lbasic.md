@@ -82,7 +82,7 @@ description: >-
         <p>Stands for the recent directory located (or flags see below)</p>
         <p></p>
         <ul>
-          <li><code>-</code> represents<code>dir1/dir2</code> (previous directory)</li>
+          <li><code>-</code> represents<code>/dir1</code> (the most recent directory)</li>
         </ul>
       </td>
     </tr>
