@@ -654,7 +654,7 @@ description: >-
         <p>Removes all the text from the cursor to the beginning</p>
         <p></p>
         <ul>
-          <li><b>Doesn&apos;t</b> work in Mac as there is no backspace
+          <li><b>Doesn&apos;t</b> work in some Macs as there is no backspace
             <ul>
               <li><b><code>Option + Delete</code></b> in MacOS</li>
             </ul>
