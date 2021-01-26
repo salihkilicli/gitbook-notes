@@ -7,9 +7,6 @@
 * [SQL](tutorials/sql/README.md)
   * [Basics](tutorials/sql/basics.md)
   * [Advanced](tutorials/sql/advanced.md)
-* [Linux](tutorials/linux/README.md)
-  * [Basics](tutorials/linux/basics.md)
-  * [Git Commands](tutorials/linux/git-commands.md)
 * [Python](tutorials/python/README.md)
   * [Basics](tutorials/python/basics.md)
   * [Intermediate](tutorials/python/intermediate.md)
@@ -20,6 +17,9 @@
     * [NumPy](tutorials/python/important-libraries/numpy.md)
     * [Pandas](tutorials/python/important-libraries/pandas.md)
     * [Scikit-learn](tutorials/python/important-libraries/scikit-learn.md)
+* [Version Control](tutorials/git/README.md)
+  * [Linux \| Shell Basics](tutorials/git/lbasic.md)
+  * [Git Commands & GitHub](tutorials/git/git-commands.md)
 * [Machine Learning](tutorials/ml.md)
 * [Deep Learning](tutorials/dl.md)
 
@@ -53,19 +53,15 @@
 
 ## Advanced Topics <a id="advanced"></a>
 
----
-
-* [Keras](keras.md)
-* [TensorFlow 2.0](tf2.md)
-* [Unit Tests & Refactoring](refactoring.md)
-* [Data Structures & Algorithms](algorithms.md)
+* [Keras](advanced/keras.md)
+* [TensorFlow 2.0](advanced/tf2.md)
+* [Unit Tests & Refactoring](advanced/refactoring.md)
+* [Data Structures & Algorithms](advanced/algorithms.md)
 
 ## Miscellaneous <a id="misc"></a>
 
----
-
-* [Coding Practice](coding/README.md)
-  * [LeetCode](coding/leetcode.md)
-  * [HackerRank](coding/hackerrank.md)
-  * [ProjectEuler](coding/projecteuler.md)
+* [Coding Practice](misc/coding/README.md)
+  * [LeetCode](misc/coding/leetcode.md)
+  * [HackerRank](misc/coding/hackerrank.md)
+  * [ProjectEuler](misc/coding/projecteuler.md)
 
