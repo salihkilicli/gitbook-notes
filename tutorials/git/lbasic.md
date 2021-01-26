@@ -41,7 +41,7 @@ description: >-
       <td style="text-align:left">
         <p>Shortcut for the home directory - <code>/home/username</code>
         </p>
-        <p>&lt;code&gt;&lt;/code&gt;</p>
+        <p></p>
         <ul>
           <li><code>~/Desktop</code> means <code>/home/username/Desktop</code>
           </li>
