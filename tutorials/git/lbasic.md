@@ -27,6 +27,7 @@ description: >-
       </td>
       <td style="text-align:left">
         <p>Used to denote following directories in the root tree</p>
+        <p></p>
         <ul>
           <li><code>/parent/child</code>directs to <b>child</b> folder inside the <b>parent</b> folder</li>
           <li><code>/parent/child/file1.txt</code> directs to <b>file1</b> text file inside
@@ -40,6 +41,7 @@ description: >-
       <td style="text-align:left">
         <p>Shortcut for the home directory - <code>/home/username</code>
         </p>
+        <p>&lt;code&gt;&lt;/code&gt;</p>
         <ul>
           <li><code>~/Desktop</code> means <code>/home/username/Desktop</code>
           </li>
@@ -51,6 +53,7 @@ description: >-
       </td>
       <td style="text-align:left">
         <p>Stands for the current directory you are located in</p>
+        <p></p>
         <ul>
           <li>Say you are in <code>dir1/dir2/dir3</code> directory
             <ul>
@@ -65,6 +68,7 @@ description: >-
       </td>
       <td style="text-align:left">
         <p>Stands for the parent directory (one directory up in the tree)</p>
+        <p></p>
         <ul>
           <li><code>..</code> represents <code>dir1/dir2</code> directory (1 dir up)</li>
           <li><code>../..</code> represents <code>/dir1 </code> directory (2 dir up)</li>
@@ -76,6 +80,7 @@ description: >-
       </td>
       <td style="text-align:left">
         <p>Stands for the recent directory located (or flags see below)</p>
+        <p></p>
         <ul>
           <li><code>-</code> represents<code>dir1/dir2</code> (previous directory)</li>
         </ul>
@@ -86,6 +91,7 @@ description: >-
       </td>
       <td style="text-align:left">
         <p>Used to skip characters if the name includes a space</p>
+        <p></p>
         <ul>
           <li>Either use <code>\</code> or put inside a string to denote a new including
             a blank in the path name</li>
@@ -100,6 +106,7 @@ description: >-
       <td style="text-align:left">
         <p>Used as a <em>wildcard</em> during searches - matches one of more occurrences
           of any character, including no character</p>
+        <p></p>
         <ul>
           <li><code>ls -l a*</code> lists all files whose name is starting with <b>a</b>
           </li>
@@ -111,6 +118,7 @@ description: >-
       </td>
       <td style="text-align:left">
         <p>Used as a <em>wildcard</em> to represent an anonymous character</p>
+        <p></p>
         <ul>
           <li><code>ls e?d</code>lists all 3-character files starts with <b>e</b> and <b>d</b>
             <ul>
@@ -125,6 +133,7 @@ description: >-
       </td>
       <td style="text-align:left">
         <p>Used as a <em>wildcard</em> to represent a character between brackets</p>
+        <p></p>
         <ul>
           <li><code>ls l[aeoi]st</code>lists all 4-character files starts with <b>l</b> ands
             with <b>st</b> if <b>[aeoi]</b> is one of the middle character.
@@ -141,6 +150,7 @@ description: >-
       <td style="text-align:left">
         <p>Characters after a dash symbol following a command stands for options
           (flags) for that command to be executed</p>
+        <p></p>
         <ul>
           <li>Example: <code>ls</code> lists files in the current folder whereas <code>ls -a</code> lists
             all - including hidden ones</li>
@@ -160,12 +170,13 @@ description: >-
       </td>
       <td style="text-align:left">
         <p> <b>Relative path</b> to a <b>file</b> relative to the current directory</p>
+        <p></p>
         <ul>
           <li>Say you are in <code>~/Desktop/dir1/dir2/file.txt</code>
           </li>
           <li>Absolute path of <b>dir1</b> folder is:
             <ul>
-              <li><code>/home/username/Desktop/parent</code>
+              <li><code>/home/username/Desktop/dir1</code>
               </li>
             </ul>
           </li>
@@ -197,6 +208,7 @@ description: >-
       </td>
       <td style="text-align:left">
         <p>Changes directory to dir (folder)</p>
+        <p></p>
         <ul>
           <li><code>cd .</code> moves to current dir (output of<code>pwd</code>)</li>
           <li><code>cd ..</code> moves 1 directory up</li>
@@ -211,6 +223,7 @@ description: >-
       </td>
       <td style="text-align:left">
         <p>Lists all (excluding hidden) files in a given / current dir</p>
+        <p></p>
         <ul>
           <li>Use <code>-a</code> flag to list hidden files (<code>.hiddenfile</code>)</li>
           <li>Use <code>-l</code> to list files in the tabular (long) format</li>
@@ -265,6 +278,7 @@ description: >-
       </td>
       <td style="text-align:left">
         <p>Shuts down the system at a given time</p>
+        <p></p>
         <ul>
           <li><code>shutdown -h now</code> - Shuts down the system immediately</li>
           <li><code>shutdown -r now</code> - Reboot the system immediately</li>
@@ -311,6 +325,7 @@ description: >-
       </td>
       <td style="text-align:left">
         <p>Prints the full date with other details</p>
+        <p></p>
         <ul>
           <li>(Default): <code>Day Month #Day hh:mm:ss TimeZone yyyy</code>
           </li>
@@ -378,6 +393,7 @@ description: >-
       </td>
       <td style="text-align:left">
         <p>Displays the contents of the file</p>
+        <p></p>
         <ul>
           <li>Can navigate forward and backward through file</li>
         </ul>
@@ -388,6 +404,7 @@ description: >-
       </td>
       <td style="text-align:left">
         <p>Displays the contents of the given file</p>
+        <p></p>
         <ul>
           <li>Allows users to scroll up &amp; down through pages</li>
         </ul>
@@ -437,6 +454,7 @@ description: >-
       </td>
       <td style="text-align:left">
         <p>Moves the given file to the given directory</p>
+        <p></p>
         <ul>
           <li>Can be used to rename files ass well
             <ul>
@@ -453,6 +471,7 @@ description: >-
       <td style="text-align:left">
         <p>Removes the given file - <b>cannot be undone</b>
         </p>
+        <p>&lt;b&gt;&lt;/b&gt;</p>
         <ul>
           <li>Can<b>not</b> remove directories unless used with <code>-r</code> option
             <ul>
@@ -480,6 +499,7 @@ description: >-
       </td>
       <td style="text-align:left">
         <p>Copies the given file with a given new name</p>
+        <p></p>
         <ul>
           <li>Can copy directories <b>recursively</b> with <code>-r</code> option
             <ul>
@@ -502,6 +522,7 @@ description: >-
         <p>Creates a physical / symbolic (<code>-s</code> option) links between files
           <br
           />In order to remove the symbolic links use either:</p>
+        <p></p>
         <ul>
           <li><code>unlink &lt;link&gt;</code> or <code>rm &lt;link&gt;</code>
           </li>
@@ -529,6 +550,7 @@ description: >-
       <td style="text-align:left">
         <p>Saves/redirects the (STDOUT) <b>output</b> of<em> file 1</em> to<em> file 2</em>
         </p>
+        <p>&lt;em&gt;&lt;/em&gt;</p>
         <ul>
           <li>Will <b>overwrite</b> the final output each time used</li>
         </ul>
@@ -616,6 +638,7 @@ description: >-
       </td>
       <td style="text-align:left">
         <p>Removes all the text from the cursor to the beginning</p>
+        <p></p>
         <ul>
           <li>Doesn&apos;t work in Mac as there is no backspace
             <ul>
