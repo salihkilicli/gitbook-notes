@@ -18,9 +18,21 @@ description: >-
   </thead>
   <tbody>
     <tr>
-      <td style="text-align:left"><b>Intro - Basic Tips</b>
+      <td style="text-align:left"><b>Intro - Basic Symbols</b>
       </td>
       <td style="text-align:left">&lt;b&gt;&lt;/b&gt;</td>
+    </tr>
+    <tr>
+      <td style="text-align:left"><b><code>(Slash) /</code></b>
+      </td>
+      <td style="text-align:left">
+        <p>Used to denote following directories in the root tree</p>
+        <ul>
+          <li><b><code>/parent/child</code></b>directs to <b>child</b> folder inside the <b>parent</b> folder</li>
+          <li><b><code>/parent/child/file1.txt</code></b> directs to <b>file1</b> text
+            file inside the <b>child</b> folder, etc.</li>
+        </ul>
+      </td>
     </tr>
     <tr>
       <td style="text-align:left"><b><code>(Tilde) ~</code></b>
@@ -72,6 +84,23 @@ description: >-
             directory)</li>
         </ul>
       </td>
+    </tr>
+    <tr>
+      <td style="text-align:left"><b><code>(Backward Slash) \</code></b>
+      </td>
+      <td style="text-align:left">
+        <p>Used to skip characters if the name includes a space</p>
+        <ul>
+          <li>Either use <b><code>\</code></b> or put inside a string to denote a new
+            including a blank in the path name</li>
+          <li><b><code>/dir1/new\ file</code></b> or <b><code>&quot;/dir1/new file.txt&quot;</code></b>is
+            used to denote the <b>&quot;new file.txt&quot;</b> text file in the <b>dir1</b> folder</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <td style="text-align:left"></td>
+      <td style="text-align:left"></td>
     </tr>
     <tr>
       <td style="text-align:left"><b><code>&lt;command&gt; -options</code></b>
