@@ -99,8 +99,45 @@ description: >-
       </td>
     </tr>
     <tr>
-      <td style="text-align:left"></td>
-      <td style="text-align:left"></td>
+      <td style="text-align:left"><b><code>(Asterisk) *</code></b>
+      </td>
+      <td style="text-align:left">
+        <p>Used as a <em>wildcard</em> during searches - matches one of more occurrences
+          of any character, including no character</p>
+        <ul>
+          <li><b><code>ls -l a*</code></b> lists all files whose name is starting with <b>a</b>
+          </li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <td style="text-align:left"><b><code>(Question Mark) ?</code></b>
+      </td>
+      <td style="text-align:left">
+        <p>Used as a <em>wildcard</em> to represent an anonymous character</p>
+        <ul>
+          <li><b><code>ls e?d</code></b>lists all 3-character files starts with <b>e</b> and <b>d</b>
+            <ul>
+              <li>Possible results <b>end, eid</b>, etc.</li>
+            </ul>
+          </li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <td style="text-align:left"><b><code>(Brackets) [chars]</code></b>
+      </td>
+      <td style="text-align:left">
+        <p>Used as a <em>wildcard</em> to represent a character between brackets</p>
+        <ul>
+          <li><b><code>ls l[aeoi]st</code></b>lists all 4-character files starts with <b>l</b> ands
+            with <b>st</b> if <b>[aeoi]</b> is one of the middle character.
+            <ul>
+              <li>Possible results <b>last, lost, list</b>, etc.</li>
+            </ul>
+          </li>
+        </ul>
+      </td>
     </tr>
     <tr>
       <td style="text-align:left"><b><code>&lt;command&gt; -options</code></b>
