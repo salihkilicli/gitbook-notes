@@ -7,6 +7,8 @@ description: >-
 
 # Linux \| Shell Basics
 
+## 1. **Basic Symbols**
+
 <table>
   <thead>
     <tr>
@@ -17,11 +19,6 @@ description: >-
     </tr>
   </thead>
   <tbody>
-    <tr>
-      <td style="text-align:left"><b>Intro - Basic Symbols</b>
-      </td>
-      <td style="text-align:left">&lt;b&gt;&lt;/b&gt;</td>
-    </tr>
     <tr>
       <td style="text-align:left"><b><code>(Slash) /</code></b>
       </td>
@@ -187,7 +184,6 @@ description: >-
             </ul>
           </li>
         </ul>
-        <p></p>
       </td>
     </tr>
     <tr>
@@ -675,6 +671,8 @@ description: >-
     </tr>
   </tbody>
 </table>
+
+
 
                                                                          **References:**                                                                        
 
