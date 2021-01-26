@@ -12,7 +12,7 @@ description: >-
 <table>
   <thead>
     <tr>
-      <th style="text-align:left"><b>Command Type</b>
+      <th style="text-align:left"><b>Symbol </b>
       </th>
       <th style="text-align:left"><b>Usage</b>
       </th>
@@ -186,15 +186,20 @@ description: >-
         </ul>
       </td>
     </tr>
+  </tbody>
+</table>
+
+## 2. Navigation Commands
+
+<table>
+  <thead>
     <tr>
-      <td style="text-align:left"></td>
-      <td style="text-align:left"></td>
+      <th style="text-align:left"><b>Command </b>
+      </th>
+      <th style="text-align:left">Usage</th>
     </tr>
-    <tr>
-      <td style="text-align:left"><b>Navigation Commands</b>
-      </td>
-      <td style="text-align:left"></td>
-    </tr>
+  </thead>
+  <tbody>
     <tr>
       <td style="text-align:left"><b><code>pwd</code></b>
       </td>
@@ -297,15 +302,21 @@ description: >-
       </td>
       <td style="text-align:left">Logs out of terminal (Ctrl+D)</td>
     </tr>
+  </tbody>
+</table>
+
+## 3. Displaying System Information
+
+<table>
+  <thead>
     <tr>
-      <td style="text-align:left"></td>
-      <td style="text-align:left"></td>
+      <th style="text-align:left"><b>Command</b>
+      </th>
+      <th style="text-align:left"><b>Usage</b>
+      </th>
     </tr>
-    <tr>
-      <td style="text-align:left"><b>Displaying System Info</b>
-      </td>
-      <td style="text-align:left">&lt;b&gt;&lt;/b&gt;</td>
-    </tr>
+  </thead>
+  <tbody>
     <tr>
       <td style="text-align:left"><b><code>w</code></b>
       </td>
@@ -361,15 +372,19 @@ description: >-
       </td>
       <td style="text-align:left">Displays the default version of the app</td>
     </tr>
+  </tbody>
+</table>
+
+## 4. Displaying File Contents
+
+<table>
+  <thead>
     <tr>
-      <td style="text-align:left"></td>
-      <td style="text-align:left"></td>
+      <th style="text-align:left">Command</th>
+      <th style="text-align:left">Usage</th>
     </tr>
-    <tr>
-      <td style="text-align:left"><b>Displaying File Contents</b>
-      </td>
-      <td style="text-align:left">&lt;b&gt;&lt;/b&gt;</td>
-    </tr>
+  </thead>
+  <tbody>
     <tr>
       <td style="text-align:left"><b><code>echo &lt;&quot;string&quot;&gt;</code></b>
       </td>
@@ -432,15 +447,19 @@ description: >-
       </td>
       <td style="text-align:left">Displays the number of words (word count) in the file</td>
     </tr>
+  </tbody>
+</table>
+
+## 5. File Manupilation
+
+<table>
+  <thead>
     <tr>
-      <td style="text-align:left"></td>
-      <td style="text-align:left"></td>
+      <th style="text-align:left">Command</th>
+      <th style="text-align:left">Usage</th>
     </tr>
-    <tr>
-      <td style="text-align:left"><b>File Manipulation</b>
-      </td>
-      <td style="text-align:left">&lt;b&gt;&lt;/b&gt;</td>
-    </tr>
+  </thead>
+  <tbody>
     <tr>
       <td style="text-align:left"><b><code>mkdir &lt;name&gt;</code></b>
       </td>
@@ -570,15 +589,21 @@ description: >-
       </td>
       <td style="text-align:left">Passes the contents of the<em> file 2 </em>(STDIN) to a program</td>
     </tr>
+  </tbody>
+</table>
+
+## 6. Terminal Shortcuts
+
+<table>
+  <thead>
     <tr>
-      <td style="text-align:left"></td>
-      <td style="text-align:left"></td>
+      <th style="text-align:left"><b>Shortcut</b>
+      </th>
+      <th style="text-align:left"><b>Usage</b>
+      </th>
     </tr>
-    <tr>
-      <td style="text-align:left"><b>Shortcuts</b>
-      </td>
-      <td style="text-align:left">&lt;b&gt;&lt;/b&gt;</td>
-    </tr>
+  </thead>
+  <tbody>
     <tr>
       <td style="text-align:left"><b><code>CTRL + A</code></b> or <b><code>HOME</code></b>
       </td>
@@ -671,8 +696,6 @@ description: >-
     </tr>
   </tbody>
 </table>
-
-
 
                                                                          **References:**                                                                        
 
