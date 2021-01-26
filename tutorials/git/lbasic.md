@@ -133,7 +133,7 @@ description: >-
         <p>Used as a <em>wildcard</em> to represent a character between brackets</p>
         <p></p>
         <ul>
-          <li><code>ls l[aeoi]st</code>lists all 4-character files starts with <b>l</b> ands
+          <li><code>ls l[aeoi]st</code>lists all 4-character files starts with <b>l</b> ends
             with <b>st</b> if <b>[aeoi]</b> is one of the middle character.
             <ul>
               <li>Possible results <b>last, lost, list</b>, etc.</li>
