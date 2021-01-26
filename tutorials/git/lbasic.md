@@ -214,6 +214,11 @@ description: >-
       <td style="text-align:left">Stops and restarts the system</td>
     </tr>
     <tr>
+      <td style="text-align:left"><b><code>reset</code></b>
+      </td>
+      <td style="text-align:left">Resets the terminal screen</td>
+    </tr>
+    <tr>
       <td style="text-align:left"><b><code>exit</code></b>
       </td>
       <td style="text-align:left">Logs out of terminal (Ctrl+D)</td>
