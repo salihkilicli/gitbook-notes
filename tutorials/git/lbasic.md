@@ -693,15 +693,15 @@ description: >-
 
 **0\)** [**https://ubuntu.com/tutorials/command-line-for-beginners\#1-overview**](https://ubuntu.com/tutorials/command-line-for-beginners#1-overview)\*\*\*\*
 
-**1\)** [**https://www.pluralsight.com/guides/beginner-linux-navigation-manual**](https://www.pluralsight.com/guides/beginner-linux-navigation-manual)\*\*\*\*
+**1\)** [**The Linux Command Line**](http://linuxcommand.org/tlcl.php) by _**William Shotts**_
 
-**2\)**  [**https://ryanstutorials.net/linuxtutorial/**](https://ryanstutorials.net/linuxtutorial/)\*\*\*\*
+**2\)** [**https://www.pluralsight.com/guides/beginner-linux-navigation-manual**](https://www.pluralsight.com/guides/beginner-linux-navigation-manual)\*\*\*\*
 
-**3\)** [**https://maker.pro/linux/tutorial/basic-linux-commands-for-beginners**](https://maker.pro/linux/tutorial/basic-linux-commands-for-beginners)\*\*\*\*
+**3\)**  [**https://ryanstutorials.net/linuxtutorial/**](https://ryanstutorials.net/linuxtutorial/)\*\*\*\*
 
-**4\)** [**https://www.tecmint.com/linux-command-line-bash-shortcut-keys/**](https://www.tecmint.com/linux-command-line-bash-shortcut-keys/)\*\*\*\*
+**4\)** [**https://maker.pro/linux/tutorial/basic-linux-commands-for-beginners**](https://maker.pro/linux/tutorial/basic-linux-commands-for-beginners)\*\*\*\*
 
-**5\)** [**The Linux Command Line**](http://linuxcommand.org/tlcl.php) by _**William Shotts**_
+**5\)** [**https://www.tecmint.com/linux-command-line-bash-shortcut-keys/**](https://www.tecmint.com/linux-command-line-bash-shortcut-keys/)\*\*\*\*
 
 \*\*\*\*
 
