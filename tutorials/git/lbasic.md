@@ -662,7 +662,7 @@ description: >-
         <p>Removes all the text from the cursor to the beginning</p>
         <p></p>
         <ul>
-          <li>Doesn&apos;t work in Mac as there is no backspace
+          <li><b>Doesn&apos;t</b> work in Mac as there is no backspace
             <ul>
               <li><b><code>Option + Delete</code></b> in MacOS</li>
             </ul>
@@ -688,7 +688,7 @@ description: >-
     <tr>
       <td style="text-align:left"><b><code>TAB</code></b>
       </td>
-      <td style="text-align:left">Use <b><code>TAB</code></b>to auto complete the path/file names</td>
+      <td style="text-align:left">Use <b><code>TAB</code></b>to autocomplete the path/file names</td>
     </tr>
     <tr>
       <td style="text-align:left">&#x21E7; | &#x21E9;</td>
