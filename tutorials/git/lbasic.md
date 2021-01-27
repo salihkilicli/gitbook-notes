@@ -213,11 +213,11 @@ description: >-
         <p>Changes directory to dir (folder)</p>
         <p></p>
         <ul>
-          <li><code>cd .</code> moves to current dir (output of<code>pwd</code>)</li>
-          <li><code>cd ..</code> moves 1 directory up</li>
-          <li><code>cd ../..</code><b><code> </code></b>moves 2 directory up</li>
-          <li><code>cd -</code><b><code>     </code></b>prints and moves to the recent
-            directory</li>
+          <li><code>cd .</code>moves to current dir (output of<code>pwd</code>)</li>
+          <li><code>cd ..</code>moves 1 directory up</li>
+          <li><code>cd ../..</code>moves 2 directory up, etc.</li>
+          <li><code>cd -</code>prints and moves to the recent directory</li>
+          <li><code>cd ~</code> moves back to home directory</li>
         </ul>
       </td>
     </tr>
