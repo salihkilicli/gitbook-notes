@@ -53,7 +53,6 @@
 
 ## Advanced Topics <a id="advanced"></a>
 
-* [Keras](advanced/keras.md)
 * [TensorFlow & Keras](advanced/tf.md)
 * [Unit Tests & Refactoring](advanced/refactoring.md)
 * [Data Structures & Algorithms](advanced/algorithms.md)
