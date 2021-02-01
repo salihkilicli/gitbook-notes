@@ -9,7 +9,9 @@ description: >-
 Currently, I am working on:
 
 * [ ] Python [Basics](tutorials/python/basics.md) under Tutorials/ Python
+* [ ] [Git Commands & GitHub ](tutorials/git/git-commands.md)notes under Tutorials/Version Control
 * [ ] The [Hands-on ML2](books/handsonml2/) book summary under Book Notes
+* [x] [Linux \| Shell Basics](tutorials/git/lbasic.md) under Version Control
 * [x] [NLP using Spacy](tutorials/python/important-libraries/spacy.md#nlp-using-spacy) library subsection under Tutorials/Python/Important Libraries
 
 
