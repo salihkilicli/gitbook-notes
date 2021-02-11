@@ -2,6 +2,8 @@
 
 ## 1. Multi-armed Bandits
 
+
+
 ## 2. Finite Markov Decision Processes
 
 ## 3. Dynamic Programming
