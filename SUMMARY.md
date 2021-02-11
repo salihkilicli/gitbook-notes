@@ -50,6 +50,7 @@
 * [Math for Machine Learning](books/mml-book/README.md)
   * [I. Mathematical Foundations](books/mml-book/math-found.md)
   * [II. Central ML Problems](books/mml-book/central-ml.md)
+* [Reinforcement Learning - Sutton](books/rl2.md)
 
 ## Advanced Topics <a id="advanced"></a>
 
