@@ -1,3 +1,10 @@
+---
+description: >-
+  Core ideas of RL algorithms in their simplest forms - states and action spaces
+  small enough - discussed in this part. In these cases methods can often find
+  exact solutions, unlike approximate methods.
+---
+
 # I. Tabular Solution Methods
 
 ## 1. Multi-armed Bandits
