@@ -54,6 +54,7 @@
   * [I. Tabular Solution Methods](books/drl/tsm.md)
   * [II. Approx. Solution Methods](books/drl/asm.md)
   * [III. Looking Deeper](books/drl/ld.md)
+  * [IV. Deep RL](books/drl/drl.md)
 
 ## Advanced Topics <a id="advanced"></a>
 
