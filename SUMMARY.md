@@ -50,7 +50,10 @@
 * [Math for Machine Learning](books/mml-book/README.md)
   * [I. Mathematical Foundations](books/mml-book/math-found.md)
   * [II. Central ML Problems](books/mml-book/central-ml.md)
-* [Deep Reinforcement Learning](books/drl.md)
+* [Deep Reinforcement Learning](books/drl/README.md)
+  * [I. Tabular Solution Methods](books/drl/tsm.md)
+  * [II. Approx. Solution Methods](books/drl/asm.md)
+  * [III. Looking Deeper](books/drl/ld.md)
 
 ## Advanced Topics <a id="advanced"></a>
 
