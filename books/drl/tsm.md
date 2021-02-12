@@ -29,6 +29,10 @@ $$Q_t(a) := \text{The estimated value of an action } a \text{ at time step } t$$
 
 If we have the estimates of the action values, then at each time step there is at least one action whose estimated value is greatest, called the **greedy** action. When we select one of these actions, it is called **exploiting** our current knowledge of the values of the actions. If we select one of the _non-greedy_ actions, then it is called _**exploring**_ as it enables us to improve our estimate of the non-greedy action's value. Exploiting is the right strategy to maximize the expected reward on the one step, however  exploration may produce greater total reward in _the long run,_ even though it will be lower in the short run. Since it is not possible to both to _explore_ and to _exploit_ with a single action selection, one often refers to the **conflict** between exploration and exploitation.
 
+In this chapter several simple balancing methods for the k-armed bandit will be presented to show that they work much better than methods that always _exploit_. The need to balance exploration and exploitation is the main challenge in reinforcement learning.
+
+### 1.1 Action-value Methods
+
 \*\*\*\*
 
 ## 2. Finite Markov Decision Processes
