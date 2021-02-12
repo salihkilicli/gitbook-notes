@@ -76,22 +76,33 @@ Since we don't have any files yet, there is no output. Now, let's create a folde
 GitHub
 
 # change directory to GitHub
->> cd GitHub
+>>> cd GitHub
 
 # initialize your first repo. Congratulations!
->> init git
+>>> init git
 Initialized empty Git repository in /Users/username/Desktop/GitHub/.git/
 
 # notice files starting with . are hidden
->> ls 
+>>> ls 
 
 # to list hidden files use -a (list all) flag
->> ls -a
+>>> ls -a
 .git
 
 # Type open to display the current folder (start/explorer on Windows)
->> open .
+>>> open .
 ```
 
-Now, you will be prompted to a new folder which is the current folder. However, there is no files yet. In order to show hidden files press `Shift + Command + .` keys on Mac, or one can let hidden folders be visible from **view options**.
+Now, you will be prompted to a new folder which is the current folder. However, there is no files yet. In order to show hidden files press `Shift + Command + .` keys on Mac, or one can let hidden folders be visible from **view options**. Now you can see the files inside the .git folder. We can also view contents of that folder using terminal.
+
+```bash
+# change directory to .git folder
+>>> cd .git
+
+# list the contents of the .git folder
+>>> ls -a
+brances            HEAD            objects
+config             hooks           refs
+description        info
+```
 
