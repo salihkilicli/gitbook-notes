@@ -31,7 +31,7 @@ If we have the estimates of the action values, then at each time step there is a
 
 In this chapter several simple balancing methods for the k-armed bandit will be presented to show that they work much better than methods that always _exploit_. The need to balance exploration and exploitation is the main challenge in reinforcement learning.
 
-### 1.1 Action-value Methods
+### 1.1. Action-value Methods
 
 Methods for estimating the values of actions and using the estimates to make action selection decisions are called **action-value methods**. One way to estimate the true value of an action is to average the rewards received:
 
@@ -48,6 +48,10 @@ A_t := argmax_{{}_{a}} \ Q_t(a)
 $$
 
 Greedy action selection always exploits the current knowledge to maximize reward; however, doesn't spend any time on sampling possibly better actions. An alternative approach is to behave greedily mostly, while - with a small probability $$ε$$ - selecting randomly from among the rest with equal probability. These methods are called **near-greedy action selection rule** or $$ε-\text{greedy}$$  methods. An advantage of these methods is that, as $$t \rightarrow ∞$$ every action will be sampled an infinite number of times; hence, ensuring $$Q_t(a) \rightarrow q_{*}(a), ∀ a$$ which implies that the _probability of selecting the optimal action_ $$\rightarrow p > 1-ε,$$ to near certainty.
+
+### 1.3. The 10-armed Testbed
+
+
 
 
 
