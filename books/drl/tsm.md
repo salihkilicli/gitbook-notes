@@ -33,7 +33,21 @@ In this chapter several simple balancing methods for the k-armed bandit will be 
 
 ### 1.1 Action-value Methods
 
-\*\*\*\*
+Methods for estimating the values of actions and using the estimates to make action selection decisions are called **action-value methods**. One way to estimate the true value of an action is to average the rewards received:
+
+$$
+Q_t(a) := \dfrac{\text{sum of rewards when } a \text{ taken prior to } t}{\text{number of times } a \text{ taken prior to } t} = \dfrac{\sum\limits_{i=1}^{t-1} R_i  \mathbb{I}_{A_i=a }}{\sum\limits_{i=1}^{t-1} \mathbb{I}_{A_i=a}}
+$$
+
+where $$\mathbb{I}_{X=x}$$ denotes the random variable that is 1 if the statement $$\{X=x\}$$ is true, 0 otherwise.  $$Q_t(a) = 0$$ is assumed if denominator is equal to $$0.$$ When $${\sum\limits_{i=1}^{t-1} \mathbb{I}_{A_i=a}} \rightarrow ∞,$$ by the _law of large numbers_ $$Q_t(a) \rightarrow q_{*}(a).$$ This method for estimating action values called **sample-averaging method,** and it is one of the simplest estimation methods.
+
+The simplest action selection rule is to select one of the _greedy action_, and making a random selection in case there are more than one. This **greedy action selection** method can be written as:
+
+$$
+A_t := argmax_{{}_{a}} \ Q_t(a)
+$$
+
+Greedy action selection always exploits the current knowledge to maximize reward; however, doesn't spend any time on sampling possibly better actions. An alternative approach is to behave greedily mostly, while - with a small probability $$ε$$ - selecting randomly from among the rest with equal probability. These methods are called **near-greedy action selection rule** or $$ε-\text{greedy}$$  methods.
 
 ## 2. Finite Markov Decision Processes
 
