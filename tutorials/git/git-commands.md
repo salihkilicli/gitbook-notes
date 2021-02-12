@@ -45,26 +45,37 @@ Use `git init` command to initialize a new repository while you are in a folder 
 After locating the directory path, use `git init` to create an empty repository, which is ready to upload files. After you typed to command there will be a new hidden file called `.git`. Let's assume you have a new computer with no files in it, and your username is **user\_name**. A brand new computer \(in my case it is a Macbook\) usually comes with the folders below: 
 
 ```bash
+# print working directory
 >>> pwd
 /Users/user_name
 
+# list files inside the directory
 >>> ls
 Applications        Downloads         Music  
 Desktop             Library           Pictures                      
 Documents           Movies            Public 
 
+# change directory to Desktop folder
 >>> cd Desktop
+
+# list files inside the Desktop folder
 >>> ls
 ```
 
 Since we don't have any files yet, there is no output. Now, let's create a folder called GitHub and initialize our first repo inside that directory after changing directory to that folder.
 
 ```bash
+# create a new directory called GitHub
 >>> mkdir GitHub
+
+# list files inside the Desktop folder (now we have GitHub folder!)
 >>> ls
 GitHub
 
+# change directory to GitHub
 >> cd GitHub
+
+# initialize your first repo. Congratulations!
 >> init git
 ```
 
