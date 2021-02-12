@@ -39,5 +39,5 @@ If it is your first time, you can download your preferred version of Git from [h
 
 ### 1.1. Creating a new Git repository
 
-
+Use `git init` command to initialize a new repository while you are in a folder that you desire to locate your repo. In order to make sure you are in the correct folder, you can first use `pwd` command to print your working directory, then using `cd dir_path` you can choose the folder you want to create the repo by feeding **relative** or **absolute path** of the desired directory, or create a new directory using `mkdir dir_name` after locating the desired path.
 
