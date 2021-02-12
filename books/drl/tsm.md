@@ -23,7 +23,7 @@ $$A_t := \text{Action selected on time step } t $$
 
 $$R_t := \text{Corresponding reward on time step t to action } A_t$$ 
 
-$$q{*}(a) := \mathbb{E}[R_t | A_t = a] \text{( Expected reward given that } a \text{ is selected) }$$
+$$q{*}(a) := \mathbb{E}[R_t | A_t = a] := \text{ Expected reward given that } a \text{ is selected}$$
 
 Notice, if we knew the _value_ of each action, then the trivial solution is to select the action with highest value. However, we often do **not** know the action values with certainty but have may have estimates.
 
