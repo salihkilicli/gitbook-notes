@@ -82,7 +82,7 @@ Initialized empty Git repository in /Users/username/Desktop/GitHub/.git/
 # notice files starting with . are hidden
 >> ls 
 
-# to list hidden files use -a 
+# to list hidden files use -a (list all) flag
 >> ls -a
 .git
 ```
