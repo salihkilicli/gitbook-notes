@@ -42,12 +42,12 @@ If it is your first time, you can download your preferred version of Git from [h
 
 Use `git init` command to initialize a new repository while you are in a folder that you desire to locate your repo. In order to make sure you are in the correct folder, you can first use `pwd` command to print your working directory, then using `cd dir_path` you can choose the folder you want to create the repo by feeding **relative** or **absolute path** of the desired directory, or create a new directory using `mkdir dir_name` after locating the desired path.
 
-After locating the directory path, use `git init` to create an empty repository, which is ready to upload files. After you typed to command there will be a new hidden file called `.git`. Let's assume you have a new computer with no files in it, and your username is **user\_name**. A brand new computer \(in my case it is a Macbook\) usually comes with the folders below: 
+After locating the directory path, use `git init` to create an empty repository, which is ready to upload files. After you typed to command there will be a new hidden file called `.git`. Let's assume you have a new computer with no files in it, and your user name is **username**. A brand new computer \(in my case it is a Macbook\) usually comes with the folders below: 
 
 ```bash
 # print working directory
 >>> pwd
-/Users/user_name
+/Users/username
 
 # list files inside the directory
 >>> ls
@@ -77,5 +77,13 @@ GitHub
 
 # initialize your first repo. Congratulations!
 >> init git
+Initialized empty Git repository in /Users/username/Desktop/GitHub/.git/
+
+# notice files starting with . are hidden
+>> ls 
+
+# to list hidden files use -a 
+>> ls -a
+.git
 ```
 
