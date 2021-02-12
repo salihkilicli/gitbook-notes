@@ -19,6 +19,7 @@ Simply put, Git helps users for tracking different versions of the software and 
 There are multiple options to install Git to your computer. First, open a terminal and check if Git is installed already and if so find the version of Git typing the command below:
 
 ```bash
+# check git version
 >>> git version
 git version 2.28.0 # 2nd major, 28th minor and 0th patch version
 ```
