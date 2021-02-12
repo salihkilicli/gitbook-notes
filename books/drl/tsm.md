@@ -47,7 +47,9 @@ $$
 A_t := argmax_{{}_{a}} \ Q_t(a)
 $$
 
-Greedy action selection always exploits the current knowledge to maximize reward; however, doesn't spend any time on sampling possibly better actions. An alternative approach is to behave greedily mostly, while - with a small probability $$ε$$ - selecting randomly from among the rest with equal probability. These methods are called **near-greedy action selection rule** or $$ε-\text{greedy}$$  methods.
+Greedy action selection always exploits the current knowledge to maximize reward; however, doesn't spend any time on sampling possibly better actions. An alternative approach is to behave greedily mostly, while - with a small probability $$ε$$ - selecting randomly from among the rest with equal probability. These methods are called **near-greedy action selection rule** or $$ε-\text{greedy}$$  methods. An advantage of these methods is that, as $$t \rightarrow ∞$$ every action will be sampled an infinite number of times; hence, ensuring $$Q_t(a) \rightarrow q_{*}(a), ∀ a$$ which implies that the _probability of selecting the optimal action_ $$\rightarrow p > 1-ε,$$ to near certainty.
+
+
 
 ## 2. Finite Markov Decision Processes
 
