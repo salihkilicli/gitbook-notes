@@ -88,5 +88,10 @@ Initialized empty Git repository in /Users/username/Desktop/GitHub/.git/
 # to list hidden files use -a (list all) flag
 >> ls -a
 .git
+
+# Type open to display the current folder (start/explorer on Windows)
+>> open .
 ```
+
+Now, you will be prompted to a new folder which is the current folder. However, there is no files yet. In order to show hidden files press `Shift + Command + .` keys on Mac, or one can let hidden folders be visible from **view options**.
 
