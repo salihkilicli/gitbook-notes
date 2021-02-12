@@ -17,15 +17,13 @@ Purely **evaluative feedback** indicates _how good the action taken was_, but no
 
 **k-armed bandit problem:** Consider a problem in which you are asked to make a repeated choice among _k-different_ options, or actions. Each choice yields a numerical reward chosen from a **stationary probability distribution** depending on the action selected. The goal is to maximize the expected total reward over same time period $$t=T$$.
 
-In the _k-armed bandit problem_, each of the _k_ actions has an expected \(mean\) reward given that the action is selected, and let's call it the _value_ of that action. Now, let us introduce some notation related to the above mentioned problem:
+In the _k-armed bandit problem_, each of the _k_ actions has an expected \(mean\) reward given that the action is selected, and let's call it the _value_ of that action. Notice, if we knew the _value_ of each action, then the trivial solution is to select the action with highest value repeatedly. However, we often do **not** know the action values with certainty but have may have estimates. Now, let us introduce some notation related to the above mentioned problem:
 
 $$A_t := \text{Action selected on time step } t $$
 
 $$R_t := \text{Corresponding reward on time step t to action } A_t$$ 
 
 $$q{*}(a) := \mathbb{E}[R_t | A_t = a] := \text{ Expected reward given that } a \text{ is selected}$$
-
-Notice, if we knew the _value_ of each action, then the trivial solution is to select the action with highest value. However, we often do **not** know the action values with certainty but have may have estimates.
 
 $$Q_t(a) := \text{The estimated value of an action } a \text{ at time step } t$$ 
 
