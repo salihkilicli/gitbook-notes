@@ -1,5 +1,8 @@
 ---
-description: Common git commands and their applications are introduced here.
+description: >-
+  Common git commands and their applications are introduced here. Most of the
+  notes are inspired from Udemy's Complete Git Guide: Understand and master Git
+  and GitHub course by Bogdan Stashchuk.
 ---
 
 # Git Commands & GitHub
