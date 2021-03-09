@@ -307,9 +307,9 @@ description: >-
       <td style="text-align:left"><b><code>zip</code></b>
       </td>
       <td style="text-align:left">
-        <p>Zipping files and folder</p>
+        <p>Zipping files and folder - (password protected)</p>
         <ul>
-          <li>zip <b>-er</b> nameofthezippedfile.zip filepath</li>
+          <li>zip <b>-er</b> namezipfile.zip filepath</li>
         </ul>
       </td>
     </tr>
