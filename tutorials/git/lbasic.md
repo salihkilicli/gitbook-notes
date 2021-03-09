@@ -303,6 +303,16 @@ description: >-
       </td>
       <td style="text-align:left">Logs out of terminal (Ctrl+D)</td>
     </tr>
+    <tr>
+      <td style="text-align:left"><b><code>zip</code></b>
+      </td>
+      <td style="text-align:left">
+        <p>Zipping files and folder</p>
+        <ul>
+          <li>zip <b>-er</b> nameofthezippedfile.zip filepath</li>
+        </ul>
+      </td>
+    </tr>
   </tbody>
 </table>
 
