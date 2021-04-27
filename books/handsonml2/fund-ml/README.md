@@ -6,7 +6,7 @@ The first part of the book covers the following topics:
 * The steps in a typical Machine Learning project
 * Learning by fitting a model to data
 * Optimizing a cost function
-* Handling, cleaning, and preparing data
+* Handling, cleaning and preparing data
 * Selecting and engineering features
 * Selecting a model and tuning hyperparameters using cross-validation
 * The challenges of Machine Learning, in particular, underfitting and overfitting \(the bias/variance trade-off\)

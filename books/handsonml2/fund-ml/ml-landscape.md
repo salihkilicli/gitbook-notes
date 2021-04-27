@@ -112,7 +112,7 @@ If you have a lot of data about your website's visitors, you can use **clusterin
 **Visualization** and **dimensionality reduction** algorithms are good examples of unsupervised learning since you feed them a lot of complex and unlabeled data and they output smaller dimensions, often in 2D or 3D, representation of the data that can easily be plotted. These algorithms try to preserve the structure of the data \(or minimize the loss of information\) in order to help you understand how the data is organized and identify unusual patterns.
 
 {% hint style="warning" %}
-It is often a good idea to try to r**educe the dimension** of your training data using a dimensionality reduction algorithm before you feed it to another Machine Learning algorithm \(such as a super‐ vised learning algorithm\). It will run much **faster**, the data will take up **less** **disk** and **memory space**, and in some cases, it may also _perform better_.
+It is often a good idea to try to r**educe the dimension** of your training data using a dimensionality reduction algorithm before you feed it to another Machine Learning algorithm \(such as a supervised learning algorithm\). It will run much **faster**, the data will take up **less** **disk** and **memory space**, and in some cases, it may also _perform better_.
 {% endhint %}
 
 Finally, another common unsupervised task is association **rule learning**, in which the goal is to dig into large amounts of data and discover interesting relations between attributes.
