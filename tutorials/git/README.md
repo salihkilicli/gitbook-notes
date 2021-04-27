@@ -4,5 +4,5 @@ description: >-
   regularly use.
 ---
 
-# Version Control
+# Git & GitHub
 

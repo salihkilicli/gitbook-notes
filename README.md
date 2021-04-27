@@ -1,6 +1,6 @@
 ---
 description: >-
-  I will be sharing my personal notes about the Programming and Data Science on
+  I will be sharing my personal notes about Programming and Data Science on
   various topics on this page. I am currently in the process of migrating my
   local notes to GitBook.
 ---
