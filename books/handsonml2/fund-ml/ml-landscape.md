@@ -141,7 +141,7 @@ In **batch learning**, the system is **incapable** of learning incrementally, th
 
 In **online learning**, the system is capable of learning incrementally, that is, the algorithm is being fed data sequentially, either individually \(**batch**\) or in smaller groups \(**mini-batches**\). Since each learning step is fast and cheap, the system can learn about the instance on the fly, as it arrives. If the dataset is so large that it doesn't fit in the system's machine's memory, the algorithm can load parts of the data and run online learning on the part until it has run on all of the data. This is called _out-of-core learning._
 
-### Instance vs Model Based Learning
+### Instance vs Model-Based Learning
 
 Another way to categorize ML systems is by how they _generalize: instance_ or _model-based._
 
@@ -179,7 +179,7 @@ The second group of challenges is due to _bad algorithms_.
 * Overfitting the Training Data
 * Underfitting the Training Data
 
-Let's first talk about the bias-variance tradeoff before algorithm based challenges: overfitting and underfitting.
+Let's first talk about the bias-variance tradeoff before algorithm-based challenges: overfitting and underfitting.
 
 > In [statistics](https://wiki2.org/en/Statistics) and [machine learning](https://wiki2.org/en/Machine_learning), the **bias–variance tradeoff** is the property of a model that the [variance](https://wiki2.org/en/Variance) of the parameter estimates across [samples](https://wiki2.org/en/Sample_%28statistics%29) can be reduced by increasing the [bias](https://wiki2.org/en/Bias_of_an_estimator) in the [estimated](https://wiki2.org/en/Estimation_theory) [parameters](https://wiki2.org/en/Statistical_parameter). The **bias–variance dilemma** or **bias–variance problem** is the conflict in trying to simultaneously minimize these two sources of [error](https://wiki2.org/en/Errors_and_residuals_in_statistics) that prevent [supervised learning](https://wiki2.org/en/Supervised_learning) algorithms from generalizing beyond their [training set](https://wiki2.org/en/Training_set). - Wikipedia
 
@@ -187,7 +187,7 @@ Let's assume $$y = f(X) + ε$$- where $$\epsilon$$ is the _white noise_  $$E[\ep
 
 ![Decomposition of the generalization error](../../../.gitbook/assets/bias-variance.svg)
 
-where the second terms $${\sigma}^2$$ is the irreducible error - the variance of the new target - and is beyond our control, even if we know the actual target value. The above equation simply states that the only part of the generalization error, that is in our control, is bias and variance of the predicted variable. For the error depends on their sum, they are inversely related to each other, i.e., one will increase as the other decreases. This is called a **bias-variance tradeoff**. The ultimate goal of an ML model is to minimize both of them as much as possible. However, we will see that as one of them increases the model will tend to underfit or overfit, responsively. Below is a good example of how prediction error behaves as model complexity changes.
+where the second term $${\sigma}^2$$ is the **irreducible error** - the variance of the new target - and _is beyond our control_, even if we know the actual target value. The above equation simply states that the only part of the generalization error, that is in our control, is bias and variance of the predicted variable. For the error depends on their sum, they are inversely related to each other, i.e., one will increase as the other decreases. This is called a **bias-variance tradeoff**. The ultimate goal of an ML model is to minimize both of them as much as possible. However, we will see that as one of them increases the model will tend to underfit or overfit, responsively. Below is a good example of how prediction error behaves as model complexity changes.
 
 ![Source: The Elements of Statistical Learning book](../../../.gitbook/assets/screen-shot-2020-10-08-at-2.40.17-pm.png)
 
@@ -206,7 +206,7 @@ On the other hand, when your model is too simple to learn the underlying complex
 
 ## Testing and Validating
 
-The only way to know how well our model will generalize to unseen data is by trying it out on new cases. One can achieve this by splitting the complete data into two sets: **training** and **test sets**. As the names suggest, you training your model in the training set \(don't touch the test set while optimizing your parameters\) and then you test how well your model works using the test set. By evaluating your model on the test set, you get an idea of how well your model would perform on instances that the model has never seen before. If the training error low whereas the test error is high, this is a good implication of **overfitting** the training data. If both of the errors are low, then there is a chance if the model is **underfitting** \(assuming that better performance is possible\) the data. In general, allocating 80% of the data for training and 20% for test is a common approach. However, when the dataset is large \(&gt; 1 million samples\), a fraction of 99% to 1% might even be a good choice, since &gt;10,000 data for testing would most likely be enough to evaluate the model performance.
+The only way to know how well our model will generalize to unseen data is by trying it out on new cases. One can achieve this by splitting the complete data into two sets: **training** and **test sets**. As the names suggest, you training your model in the training set \(don't touch the test set while optimizing your parameters\) and then you test how well your model works using the test set. By evaluating your model on the test set, you get an idea of how well your model would perform on instances that the model has never seen before. If the training error low whereas the test error is high, this is a good implication of **overfitting** the training data. If both of the errors are low, then there is a chance if the model is **underfitting** \(assuming that better performance is possible\) the data. In general, allocating 80% of the data for training and 20% for testing is a common approach. However, when the dataset is large \(&gt; 1 million samples\), a fraction of 99% to 1% might even be a good choice, since &gt;10,000 data for testing would most likely be enough to evaluate the model performance.
 
 ### Hyperparameter Tuning and Model Selection
 
@@ -228,7 +228,7 @@ Choose dev and test sets to reflect data you expect to feed into your model in t
 
 ### Data Leakage
 
-I wanted to add this topic since it is very important and somehow was not included in the book. The source of these notes is Kaggle's [Data Leakage](https://www.kaggle.com/alexisbcook/data-leakage) section in [Intermediate Machine Learning](https://www.kaggle.com/learn/intermediate-machine-learning) mini-course. 
+I wanted to add this topic since it is very important and somehow was not included in the book. The source of these notes is Kaggle's [Data Leakage](https://www.kaggle.com/alexisbcook/data-leakage) section in the [Intermediate Machine Learning](https://www.kaggle.com/learn/intermediate-machine-learning) mini-course. 
 
 Sometimes even though the model yields a very high-performance metric on the test set but generalizes very poorly to unseen data because there is a data leakage between training and test datasets. 
 
@@ -247,7 +247,7 @@ In short, data leakage causes overly optimistic results; however, the model make
 
 In order to prevent this type of data leakage, variables updated or created after the target value's value is realized should be excluded from the model.
 
-A different type of leak occurs when the training and validation data are not distinguished. Validation is only used to measure how well the model performs on the unseen data. There are multiple ways to corrupt this process in subtle ways if the validation data affects preprocessing behavior. This type of leakage is called **train-test contamination**. An example of this would occur when using standardization used negligently. For example, when using sklearn's StandardScaler object, you first create an instance. Let's call it scaler. Then, you would fit the training data to obtain the mean and standard deviation of the data.
+A different type of leak occurs when the training and validation data are not distinguished. Validation is only used to measure how well the model performs on the unseen data. There are multiple ways to corrupt this process in subtle ways if the validation data affects preprocessing behavior. This type of leakage is called **train-test contamination**. An example of this would occur when using standardization used negligently. For example, when using Sklearn's StandardScaler object, you first create an instance. Let's call it scaler. Then, you would fit the training data to obtain the mean and standard deviation of the data.
 
 $$
 μ = \dfrac{1}{N} \sum_{i=1}^{N} x_{train} ,\quad \sigma = \sqrt{ \dfrac{1}{N} \sum_{i=1}^{N} (\mu_{train} - x_{train})^2}
