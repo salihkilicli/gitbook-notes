@@ -52,7 +52,7 @@ There are other metrics that are more useful for different types of problems, an
 
 &#x20;            $$\textbf{Recall (Sensitivity)} = \dfrac{TP}{TP + FN} \ \text{(TPR := True Positive Rate)}$$
 
-&#x20;         $$\textbf{Specificity} = \dfrac{TN}{TN + FP} =1 - \dfrac{FP}{FP + TN} \ \text{(1 - False Positive Rate)}$$
+&#x20;         $$\textbf{Specificity} = \dfrac{TN}{TN + FP} =1 - \dfrac{FP}{FP + TN} \ =\text{1 - FPR}$$
 
 Notice, similarly we can define $$\text{FPR (False Positive Rate)} = 1 - \textbf{Specificity}.$$These three metrics are very important as it is a common practice to visualize the scatter plot of **Precision** vs **Recall** and **TPR** (Recall, Sensitivity) vs **FPR** (1-Specificity), which is also called **ROC** (Receiver Operating Characteristic) curve, and calculating the area under the **ROC** curve, called **AUC**, in order to evaluate model's predictive power.
 
