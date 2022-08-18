@@ -11,7 +11,7 @@ Order of basic clauses:
 3. **FROM** _table-source_ \[**WHERE** _search-condition_]
 4. **GROUP BY** _groupby-expression_
 5. **WINDOW** _windowfunc-expression_
-6. **HAVING** _search\_condition_ (within _groupby_ clause)
+6. **HAVING** _search-condition_ (within _groupby_ clause)
 7. **ORDER BY** _order-expression_ \[**ASC** _ascending_ | **DESC** _descending_]
 8. **LIMIT** _num-results_
 
